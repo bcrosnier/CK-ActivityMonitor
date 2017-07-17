@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Getting started | CK-Text </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Getting started | CK-Text ">
+    <meta name="generator" content="docfx 2.20.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="CK-Text">
+                <span class="app-name">CK-Text</span>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started">Getting started</h1>
+
+<p>Here are some instructions to get you set up.</p>
+<h2 id="install-the-nuget-packages">Install the NuGet packages</h2>
+<p>As of CK.ActivityMonitor 8, you only need to add <a href="https://www.nuget.org/packages/CK.ActivityMonitor.SimpleSender/"><strong><code>CK.ActivityMonitor.SimpleSender</code></strong></a> in the project where you want to call the <code>ActivityMonitor</code> <strong>without configuring the output</strong> (e.g. in a library used by something else that <em>does</em> configure the output).</p>
+<pre><code class="lang-posh">Install-Package CK.ActivityMonitor.SimpleSender -Pre
+</code></pre><p>If you also want to <strong>configure the logging output</strong> (e.g. you are in an application host, or a website project, and not just a library), you also need <a href="https://www.nuget.org/packages/CK.Monitoring/"><strong><code>CK.Monitoring</code></strong></a>.</p>
+<pre><code class="lang-posh">Install-Package CK.Monitoring -Pre
+</code></pre><h2 id="configure-the-activitymonitor-output">Configure the <code>ActivityMonitor</code> output</h2>
+<p>The <code>ActivityMonitor</code> output needs to be configured at the start of your application or website:</p>
+<pre><code class="lang-csharp">using CK.Core;
+using CK.Monitoring;
+using CK.Monitoring.Handlers;
+
+class Startup
+{
+    public Startup()
+    {
+        // Output all CK.Monitoring files in C:\Logs\
+        // Note: The path must be absolute. Relative paths are not supported
+        SystemActivityMonitor.RootLogPath = @&quot;C:\Logs&quot;;
+        // Prepare GrandOutput handlers
+        GrandOutputConfiguration grandOutputConfig = new GrandOutputConfiguration();
+        // TextFile handler: 10 000 lines per file, saved in C:\Logs\TextFile\
+        grandOutputConfig.AddHandler( new TextFileConfiguration()
+        {
+            MaxCountPerFile = 10000,
+            Path = &quot;TextFile&quot;, // Relative to SystemActivityMonitor.RootLogPath
+        } );
+        GrandOutput.EnsureActiveDefault( grandOutputConfig );
+    }
+}
+</code></pre><p>This initialization (and the <code>CK.Monitoring</code> package) is usually not necessary if your package is a simple library, but the host that uses your library will have to configure it.</p>
+<p>The default <code>GrandOutput</code> configured here is a big sink in which all new <code>ActivityMonitor</code> instances will output.</p>
+<h2 id="create-an-activitymonitor">Create an <code>ActivityMonitor</code></h2>
+<p>Just create a new instance of the <code>ActivityMonitor</code> class as you would for any other class, and use that.</p>
+<pre><code class="lang-csharp">using CK.Core;
+
+namespace My.App
+{
+    public class MyClass
+    {
+        public void MyMethod() {
+            IActivityMonitor m = new ActivityMonitor();
+            m.Info(&quot;Hello world&quot;);
+        }
+    }
+}
+</code></pre><p>You can add a <em>topic</em> to a particular monitor by calling the constructor with a message:</p>
+<pre><code class="lang-csharp">public void MyMethod() {
+    IActivityMonitor m = new ActivityMonitor(&quot;My topic&quot;);
+}
+</code></pre><p>You can <em>change</em> the topic of a monitor by calling the <code>SetTopic(message)</code> method on <code>ActivityMonitor</code>.</p>
+<p>The topic is merely a log line with a special tag, sent when constructing the monitor or changing it. More on tags below.</p>
+<h2 id="log-levels">Log levels</h2>
+<p>The <code>ActivityMonitor</code> has six log levels:</p>
+<ul>
+<li><code>Debug</code></li>
+<li><code>Trace</code></li>
+<li><code>Info</code></li>
+<li><code>Warn</code></li>
+<li><code>Error</code></li>
+<li><code>Fatal</code></li>
+</ul>
+<p>Use any of the named extension methods to send a log line to the <code>ActivityMonitor</code>:</p>
+<pre><code class="lang-csharp">public void MyMethod() {
+    IActivityMonitor m = new ActivityMonitor();
+    m.Debug(&quot;Debug line&quot;);
+    m.Trace(&quot;Trace line&quot;);
+    m.Info(&quot;Info line&quot;);
+    m.Warn(&quot;Warn line&quot;);
+    m.Error(&quot;Error line&quot;);
+    m.Fatal(&quot;Fatal line&quot;);
+}
+</code></pre><h2 id="logging-exceptions">Logging exceptions</h2>
+<p>The <code>ActivityMonitor</code> will serialize any exception that you give it, including its contents and inner exceptions.</p>
+<pre><code class="lang-csharp">public void MyMethod() {
+    IActivityMonitor m = new ActivityMonitor();
+    try
+    {
+        throw new DivideByZeroException();
+    }
+    catch (DivideByZeroException e)
+    {
+        m.Error(&quot;Something bad happened&quot;, e);
+    }
+}
+</code></pre><h2 id="adding-tags-to-log-lines">Adding tags to log lines</h2>
+<p>You can add tags (<code>CKTrait</code> objects) to log lines to categorize or filter them later on. The tag must be registered once, but can be kept:</p>
+<pre><code class="lang-csharp">public static CKTrait LogTag = ActivityMonitor.Tags.Register(&quot;MY_LOG_TAG&quot;);
+
+public void MyMethod() {
+    IActivityMonitor m = new ActivityMonitor();
+    m.Info(&quot;Line with tag&quot;, LogTag);
+}
+</code></pre><p>The same tag can be registered multiple times: they will always point to the same object.</p>
+<p>More information about <code>CKTrait</code> can be found <a href="https://github.com/Invenietis/CK-Core/blob/master/CK.Core/CKTrait.cs">directly in the source code of CK-Core</a>.</p>
+<h3 id="combining-tags">Combining tags</h3>
+<p>You can combine tags by separating them with a pipe (<code>|</code>) when registering them:</p>
+<pre><code class="lang-csharp">public static CKTrait CombinedTag = ActivityMonitor.Tags.Register(&quot;TAG_ONE|TAG_TWO&quot;);
+
+public void MyMethod() {
+    IActivityMonitor m = new ActivityMonitor();
+    m.Info(&quot;Line with TAG_ONE and TAG_TWO&quot;, CombinedTag);
+}
+</code></pre><h2 id="groups">Groups</h2>
+<p>You can structure logs sections by using the the <code>Open*</code> methods, which return <code>IDisposable</code> groups:</p>
+<pre><code class="lang-csharp">public void MyMethod() {
+    IActivityMonitor m = new ActivityMonitor();
+    using(m.OpenInfo(&quot;Info group&quot;))
+    {
+        m.Info(&quot;Line structured inside group&quot;);
+    }
+}
+</code></pre><p>Groups are mostly like regular log lines: they have the same log levels (<code>Debug</code>, <code>Trace</code>, <code>Info</code>, <code>Warn</code>, <code>Error</code>, <code>Fatal</code>), and you can call <code>Open*</code> with exceptions and/or tags, and put groups inside groups.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/Documentation/articles/getting-started.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2017 Invenietis<br>Generated by <strong><a href="https://dotnet.github.io/docfx/" target="_blank">DocFX</a></strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

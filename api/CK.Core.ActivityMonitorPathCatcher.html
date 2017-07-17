@@ -1,0 +1,593 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ActivityMonitorPathCatcher
+   | CK-Text </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ActivityMonitorPathCatcher
+   | CK-Text ">
+    <meta name="generator" content="docfx 2.20.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="CK-Text">
+                <span class="app-name">CK-Text</span>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CK.Core.ActivityMonitorPathCatcher">
+  
+  
+  <h1 id="CK_Core_ActivityMonitorPathCatcher" data-uid="CK.Core.ActivityMonitorPathCatcher" class="text-break">Class ActivityMonitorPathCatcher
+  </h1>
+  <div class="markdown level0 summary"><p>The &quot;Path Catcher&quot; captures the current path of the opened groups and the last, current, line and exposes it thanks to 
+a read only list of <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.PathElement.html">ActivityMonitorPathCatcher.PathElement</a> (the <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html#CK_Core_ActivityMonitorPathCatcher_DynamicPath">DynamicPath</a> property),
+plus two other specific paths, the <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html#CK_Core_ActivityMonitorPathCatcher_LastErrorPath">LastErrorPath</a> and the <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html#CK_Core_ActivityMonitorPathCatcher_LastWarnOrErrorPath">LastWarnOrErrorPath</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><a class="xref" href="CK.Core.ActivityMonitorClient.html">ActivityMonitorClient</a></div>
+    <div class="level2"><span class="xref">ActivityMonitorPathCatcher</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CK.Core.ActivityMonitorClient.html#CK_Core_ActivityMonitorClient_Empty">ActivityMonitorClient.Empty</a>
+    </div>
+    <div>
+      <a class="xref" href="CK.Core.ActivityMonitorClient.html#CK_Core_ActivityMonitorClient_MinimalFilter">ActivityMonitorClient.MinimalFilter</a>
+    </div>
+    <div>
+      <a class="xref" href="CK.Core.ActivityMonitorClient.html#CK_Core_ActivityMonitorClient_OnGroupClosing_CK_Core_IActivityLogGroup_System_Collections_Generic_List_CK_Core_ActivityLogGroupConclusion___">ActivityMonitorClient.OnGroupClosing(IActivityLogGroup, List&lt;ActivityLogGroupConclusion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="CK.Core.ActivityMonitorClient.html#CK_Core_ActivityMonitorClient_OnTopicChanged_System_String_System_String_System_Int32_">ActivityMonitorClient.OnTopicChanged(String, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CK.Core.ActivityMonitorClient.html#CK_Core_ActivityMonitorClient_OnAutoTagsChanged_CK_Core_CKTrait_">ActivityMonitorClient.OnAutoTagsChanged(CKTrait)</a>
+    </div>
+    <div>
+      <a class="xref" href="CK.Core.ActivityMonitorClient.html#CK_Core_ActivityMonitorClient_CreateMultipleRegisterOnBoundClientException_CK_Core_IActivityMonitorBoundClient_">ActivityMonitorClient.CreateMultipleRegisterOnBoundClientException(IActivityMonitorBoundClient)</a>
+    </div>
+    <div>
+      <a class="xref" href="CK.Core.ActivityMonitorClient.html#CK_Core_ActivityMonitorClient_CK_Core_IActivityMonitorClient_OnUnfilteredLog_CK_Core_ActivityMonitorLogData_">ActivityMonitorClient.IActivityMonitorClient.OnUnfilteredLog(ActivityMonitorLogData)</a>
+    </div>
+    <div>
+      <a class="xref" href="CK.Core.ActivityMonitorClient.html#CK_Core_ActivityMonitorClient_CK_Core_IActivityMonitorClient_OnOpenGroup_CK_Core_IActivityLogGroup_">ActivityMonitorClient.IActivityMonitorClient.OnOpenGroup(IActivityLogGroup)</a>
+    </div>
+    <div>
+      <a class="xref" href="CK.Core.ActivityMonitorClient.html#CK_Core_ActivityMonitorClient_CK_Core_IActivityMonitorClient_OnGroupClosing_CK_Core_IActivityLogGroup_System_Collections_Generic_List_CK_Core_ActivityLogGroupConclusion___">ActivityMonitorClient.IActivityMonitorClient.OnGroupClosing(IActivityLogGroup, List&lt;ActivityLogGroupConclusion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="CK.Core.ActivityMonitorClient.html#CK_Core_ActivityMonitorClient_CK_Core_IActivityMonitorClient_OnGroupClosed_CK_Core_IActivityLogGroup_System_Collections_Generic_IReadOnlyList_CK_Core_ActivityLogGroupConclusion__">ActivityMonitorClient.IActivityMonitorClient.OnGroupClosed(IActivityLogGroup, IReadOnlyList&lt;ActivityLogGroupConclusion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="CK.Core.ActivityMonitorClient.html#CK_Core_ActivityMonitorClient_CK_Core_IActivityMonitorClient_OnTopicChanged_System_String_System_String_System_Int32_">ActivityMonitorClient.IActivityMonitorClient.OnTopicChanged(String, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CK.Core.ActivityMonitorClient.html#CK_Core_ActivityMonitorClient_CK_Core_IActivityMonitorClient_OnAutoTagsChanged_CK_Core_CKTrait_">ActivityMonitorClient.IActivityMonitorClient.OnAutoTagsChanged(CKTrait)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CK.Core.html">CK.Core</a></h6>
+  <h6><strong>Assembly</strong>: CK.ActivityMonitor.dll</h6>
+  <h5 id="CK_Core_ActivityMonitorPathCatcher_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ActivityMonitorPathCatcher : ActivityMonitorClient, IActivityMonitorBoundClient, IActivityMonitorClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorPathCatcher__ctor.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorPathCatcher.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Client/ActivityMonitorPathCatcher.cs/#L87">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorPathCatcher__ctor_" data-uid="CK.Core.ActivityMonitorPathCatcher.#ctor*"></a>
+  <h4 id="CK_Core_ActivityMonitorPathCatcher__ctor" data-uid="CK.Core.ActivityMonitorPathCatcher.#ctor">ActivityMonitorPathCatcher()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html">ActivityMonitorPathCatcher</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActivityMonitorPathCatcher()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorPathCatcher_DynamicPath.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorPathCatcher.DynamicPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Client/ActivityMonitorPathCatcher.cs/#L118">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorPathCatcher_DynamicPath_" data-uid="CK.Core.ActivityMonitorPathCatcher.DynamicPath*"></a>
+  <h4 id="CK_Core_ActivityMonitorPathCatcher_DynamicPath" data-uid="CK.Core.ActivityMonitorPathCatcher.DynamicPath">DynamicPath</h4>
+  <div class="markdown level1 summary"><p>Gets the current (mutable) path. You may use ToArray or ToList methods to take a snapshot of this list.
+Use the extension method <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_ToStringPath_System_Collections_Generic_IEnumerable_CK_Core_ActivityMonitorPathCatcher_PathElement__System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_">ToStringPath(IEnumerable&lt;ActivityMonitorPathCatcher.PathElement&gt;, String, String, String, String, String, String, String, String, String, String)</a> to easily format this path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;ActivityMonitorPathCatcher.PathElement&gt; DynamicPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/hh192385(v=vs.110).aspx">IReadOnlyList</a>&lt;<a class="xref" href="CK.Core.ActivityMonitorPathCatcher.PathElement.html">ActivityMonitorPathCatcher.PathElement</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorPathCatcher_IsLocked.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorPathCatcher.IsLocked%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Client/ActivityMonitorPathCatcher.cs/#L108">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorPathCatcher_IsLocked_" data-uid="CK.Core.ActivityMonitorPathCatcher.IsLocked*"></a>
+  <h4 id="CK_Core_ActivityMonitorPathCatcher_IsLocked" data-uid="CK.Core.ActivityMonitorPathCatcher.IsLocked">IsLocked</h4>
+  <div class="markdown level1 summary"><p>Gets or sets whether this <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html">ActivityMonitorPathCatcher</a> can be removed from its monitor.
+Defaults to false. When setting this to true, <a class="xref" href="CK.Core.IActivityMonitorOutput.html#CK_Core_IActivityMonitorOutput_UnregisterClient_CK_Core_IActivityMonitorClient_">UnregisterClient(IActivityMonitorClient)</a>
+does not remove it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLocked { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorPathCatcher_LastErrorPath.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorPathCatcher.LastErrorPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Client/ActivityMonitorPathCatcher.cs/#L128">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorPathCatcher_LastErrorPath_" data-uid="CK.Core.ActivityMonitorPathCatcher.LastErrorPath*"></a>
+  <h4 id="CK_Core_ActivityMonitorPathCatcher_LastErrorPath" data-uid="CK.Core.ActivityMonitorPathCatcher.LastErrorPath">LastErrorPath</h4>
+  <div class="markdown level1 summary"><p>Gets the last <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html#CK_Core_ActivityMonitorPathCatcher_DynamicPath">DynamicPath</a> where an <a class="xref" href="CK.Core.LogLevel.html#CK_Core_LogLevel_Error">Error</a> or a <a class="xref" href="CK.Core.LogLevel.html#CK_Core_LogLevel_Fatal">Fatal</a> occurred.
+Null if no error nor fatal occurred.
+Use the extension method <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_ToStringPath_System_Collections_Generic_IEnumerable_CK_Core_ActivityMonitorPathCatcher_PathElement__System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_">ToStringPath(IEnumerable&lt;ActivityMonitorPathCatcher.PathElement&gt;, String, String, String, String, String, String, String, String, String, String)</a> to easily format this path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;ActivityMonitorPathCatcher.PathElement&gt; LastErrorPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/hh192385(v=vs.110).aspx">IReadOnlyList</a>&lt;<a class="xref" href="CK.Core.ActivityMonitorPathCatcher.PathElement.html">ActivityMonitorPathCatcher.PathElement</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorPathCatcher_LastWarnOrErrorPath.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorPathCatcher.LastWarnOrErrorPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Client/ActivityMonitorPathCatcher.cs/#L146">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorPathCatcher_LastWarnOrErrorPath_" data-uid="CK.Core.ActivityMonitorPathCatcher.LastWarnOrErrorPath*"></a>
+  <h4 id="CK_Core_ActivityMonitorPathCatcher_LastWarnOrErrorPath" data-uid="CK.Core.ActivityMonitorPathCatcher.LastWarnOrErrorPath">LastWarnOrErrorPath</h4>
+  <div class="markdown level1 summary"><p>Gets the last path with a <a class="xref" href="CK.Core.LogLevel.html#CK_Core_LogLevel_Fatal">Fatal</a>, <a class="xref" href="CK.Core.LogLevel.html#CK_Core_LogLevel_Error">Error</a> or a <a class="xref" href="CK.Core.LogLevel.html#CK_Core_LogLevel_Warn">Warn</a>.
+Null if no error, fatal nor warn occurred.
+Use the extension method <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_ToStringPath_System_Collections_Generic_IEnumerable_CK_Core_ActivityMonitorPathCatcher_PathElement__System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_">ToStringPath(IEnumerable&lt;ActivityMonitorPathCatcher.PathElement&gt;, String, String, String, String, String, String, String, String, String, String)</a> to easily format this path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;ActivityMonitorPathCatcher.PathElement&gt; LastWarnOrErrorPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/hh192385(v=vs.110).aspx">IReadOnlyList</a>&lt;<a class="xref" href="CK.Core.ActivityMonitorPathCatcher.PathElement.html">ActivityMonitorPathCatcher.PathElement</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorPathCatcher_ClearLastErrorPath.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorPathCatcher.ClearLastErrorPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Client/ActivityMonitorPathCatcher.cs/#L136">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorPathCatcher_ClearLastErrorPath_" data-uid="CK.Core.ActivityMonitorPathCatcher.ClearLastErrorPath*"></a>
+  <h4 id="CK_Core_ActivityMonitorPathCatcher_ClearLastErrorPath" data-uid="CK.Core.ActivityMonitorPathCatcher.ClearLastErrorPath">ClearLastErrorPath()</h4>
+  <div class="markdown level1 summary"><p>Clears current <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html#CK_Core_ActivityMonitorPathCatcher_LastErrorPath">LastErrorPath</a> (sets it to null).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearLastErrorPath()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorPathCatcher_ClearLastWarnPath_System_Boolean_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorPathCatcher.ClearLastWarnPath(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Client/ActivityMonitorPathCatcher.cs/#L155">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorPathCatcher_ClearLastWarnPath_" data-uid="CK.Core.ActivityMonitorPathCatcher.ClearLastWarnPath*"></a>
+  <h4 id="CK_Core_ActivityMonitorPathCatcher_ClearLastWarnPath_System_Boolean_" data-uid="CK.Core.ActivityMonitorPathCatcher.ClearLastWarnPath(System.Boolean)">ClearLastWarnPath(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Clears current <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html#CK_Core_ActivityMonitorPathCatcher_LastWarnOrErrorPath">LastWarnOrErrorPath</a> (sets it to null), and
+optionally clears <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html#CK_Core_ActivityMonitorPathCatcher_LastErrorPath">LastErrorPath</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearLastWarnPath(bool clearLastErrorPath = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">clearLastErrorPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorPathCatcher_OnGroupClosed_CK_Core_IActivityLogGroup_System_Collections_Generic_IReadOnlyList_CK_Core_ActivityLogGroupConclusion__.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorPathCatcher.OnGroupClosed(CK.Core.IActivityLogGroup%2CSystem.Collections.Generic.IReadOnlyList%7BCK.Core.ActivityLogGroupConclusion%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Client/ActivityMonitorPathCatcher.cs/#L209">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorPathCatcher_OnGroupClosed_" data-uid="CK.Core.ActivityMonitorPathCatcher.OnGroupClosed*"></a>
+  <h4 id="CK_Core_ActivityMonitorPathCatcher_OnGroupClosed_CK_Core_IActivityLogGroup_System_Collections_Generic_IReadOnlyList_CK_Core_ActivityLogGroupConclusion__" data-uid="CK.Core.ActivityMonitorPathCatcher.OnGroupClosed(CK.Core.IActivityLogGroup,System.Collections.Generic.IReadOnlyList{CK.Core.ActivityLogGroupConclusion})">OnGroupClosed(IActivityLogGroup, IReadOnlyList&lt;ActivityLogGroupConclusion&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes one or two last <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.PathElement.html">ActivityMonitorPathCatcher.PathElement</a> of <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html#CK_Core_ActivityMonitorPathCatcher_DynamicPath">DynamicPath</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnGroupClosed(IActivityLogGroup group, IReadOnlyList&lt;ActivityLogGroupConclusion&gt; conclusions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.IActivityLogGroup.html">IActivityLogGroup</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>The closed group.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/hh192385(v=vs.110).aspx">IReadOnlyList</a>&lt;<a class="xref" href="CK.Core.ActivityLogGroupConclusion.html">ActivityLogGroupConclusion</a>&gt;</td>
+        <td><span class="parametername">conclusions</span></td>
+        <td><p>Texts that conclude the group. Never null but can be empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CK.Core.ActivityMonitorClient.html#CK_Core_ActivityMonitorClient_OnGroupClosed_CK_Core_IActivityLogGroup_System_Collections_Generic_IReadOnlyList_CK_Core_ActivityLogGroupConclusion__">ActivityMonitorClient.OnGroupClosed(IActivityLogGroup, IReadOnlyList&lt;ActivityLogGroupConclusion&gt;)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorPathCatcher_OnOpenGroup_CK_Core_IActivityLogGroup_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorPathCatcher.OnOpenGroup(CK.Core.IActivityLogGroup)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Client/ActivityMonitorPathCatcher.cs/#L189">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorPathCatcher_OnOpenGroup_" data-uid="CK.Core.ActivityMonitorPathCatcher.OnOpenGroup*"></a>
+  <h4 id="CK_Core_ActivityMonitorPathCatcher_OnOpenGroup_CK_Core_IActivityLogGroup_" data-uid="CK.Core.ActivityMonitorPathCatcher.OnOpenGroup(CK.Core.IActivityLogGroup)">OnOpenGroup(IActivityLogGroup)</h4>
+  <div class="markdown level1 summary"><p>Appends or updates the last <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.PathElement.html">ActivityMonitorPathCatcher.PathElement</a> of <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html#CK_Core_ActivityMonitorPathCatcher_DynamicPath">DynamicPath</a>
+and handles errors or warning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnOpenGroup(IActivityLogGroup group)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.IActivityLogGroup.html">IActivityLogGroup</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>The newly opened <a class="xref" href="CK.Core.IActivityLogGroup.html">IActivityLogGroup</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CK.Core.ActivityMonitorClient.html#CK_Core_ActivityMonitorClient_OnOpenGroup_CK_Core_IActivityLogGroup_">ActivityMonitorClient.OnOpenGroup(IActivityLogGroup)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorPathCatcher_OnUnfilteredLog_CK_Core_ActivityMonitorLogData_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorPathCatcher.OnUnfilteredLog(CK.Core.ActivityMonitorLogData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Client/ActivityMonitorPathCatcher.cs/#L166">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorPathCatcher_OnUnfilteredLog_" data-uid="CK.Core.ActivityMonitorPathCatcher.OnUnfilteredLog*"></a>
+  <h4 id="CK_Core_ActivityMonitorPathCatcher_OnUnfilteredLog_CK_Core_ActivityMonitorLogData_" data-uid="CK.Core.ActivityMonitorPathCatcher.OnUnfilteredLog(CK.Core.ActivityMonitorLogData)">OnUnfilteredLog(ActivityMonitorLogData)</h4>
+  <div class="markdown level1 summary"><p>Appends or updates the last <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.PathElement.html">ActivityMonitorPathCatcher.PathElement</a> of <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html#CK_Core_ActivityMonitorPathCatcher_DynamicPath">DynamicPath</a>
+and handles errors or warning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnUnfilteredLog(ActivityMonitorLogData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.ActivityMonitorLogData.html">ActivityMonitorLogData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Log data. Never null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CK.Core.ActivityMonitorClient.html#CK_Core_ActivityMonitorClient_OnUnfilteredLog_CK_Core_ActivityMonitorLogData_">ActivityMonitorClient.OnUnfilteredLog(ActivityMonitorLogData)</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorPathCatcher_CK_Core_IActivityMonitorBoundClient_IsDead.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorPathCatcher.CK%23Core%23IActivityMonitorBoundClient%23IsDead%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Client/ActivityMonitorPathCatcher.cs/#L101">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorPathCatcher_CK_Core_IActivityMonitorBoundClient_IsDead_" data-uid="CK.Core.ActivityMonitorPathCatcher.CK#Core#IActivityMonitorBoundClient#IsDead*"></a>
+  <h4 id="CK_Core_ActivityMonitorPathCatcher_CK_Core_IActivityMonitorBoundClient_IsDead" data-uid="CK.Core.ActivityMonitorPathCatcher.CK#Core#IActivityMonitorBoundClient#IsDead">IActivityMonitorBoundClient.IsDead</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IActivityMonitorBoundClient.IsDead { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitorBoundClient.html#CK_Core_IActivityMonitorBoundClient_IsDead">IActivityMonitorBoundClient.IsDead</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorPathCatcher_CK_Core_IActivityMonitorBoundClient_SetMonitor_CK_Core_Impl_IActivityMonitorImpl_System_Boolean_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorPathCatcher.CK%23Core%23IActivityMonitorBoundClient%23SetMonitor(CK.Core.Impl.IActivityMonitorImpl%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Client/ActivityMonitorPathCatcher.cs/#L92">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorPathCatcher_CK_Core_IActivityMonitorBoundClient_SetMonitor_" data-uid="CK.Core.ActivityMonitorPathCatcher.CK#Core#IActivityMonitorBoundClient#SetMonitor*"></a>
+  <h4 id="CK_Core_ActivityMonitorPathCatcher_CK_Core_IActivityMonitorBoundClient_SetMonitor_CK_Core_Impl_IActivityMonitorImpl_System_Boolean_" data-uid="CK.Core.ActivityMonitorPathCatcher.CK#Core#IActivityMonitorBoundClient#SetMonitor(CK.Core.Impl.IActivityMonitorImpl,System.Boolean)">IActivityMonitorBoundClient.SetMonitor(IActivityMonitorImpl, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IActivityMonitorBoundClient.SetMonitor(IActivityMonitorImpl source, bool forceBuggyRemove)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.Impl.IActivityMonitorImpl.html">IActivityMonitorImpl</a></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">forceBuggyRemove</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitorBoundClient.html#CK_Core_IActivityMonitorBoundClient_SetMonitor_CK_Core_Impl_IActivityMonitorImpl_System_Boolean_">IActivityMonitorBoundClient.SetMonitor(IActivityMonitorImpl, Boolean)</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorPathCatcher.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorPathCatcher%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Client/ActivityMonitorPathCatcher.cs/#L39" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2017 Invenietis<br>Generated by <strong><a href="https://dotnet.github.io/docfx/" target="_blank">DocFX</a></strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

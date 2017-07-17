@@ -1,0 +1,1807 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ActivityMonitor
+   | CK-Text </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ActivityMonitor
+   | CK-Text ">
+    <meta name="generator" content="docfx 2.20.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="CK-Text">
+                <span class="app-name">CK-Text</span>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CK.Core.ActivityMonitor">
+  
+  
+  <h1 id="CK_Core_ActivityMonitor" data-uid="CK.Core.ActivityMonitor" class="text-break">Class ActivityMonitor
+  </h1>
+  <div class="markdown level0 summary"><p>Concrete implementation of <a class="xref" href="CK.Core.IActivityMonitor.html">IActivityMonitor</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><span class="xref">ActivityMonitor</span></div>
+  </div>
+      <div class="level2"><a class="xref" href="CK.Core.SystemActivityMonitor.html">SystemActivityMonitor</a></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CK.Core.html">CK.Core</a></h6>
+  <h6><strong>Assembly</strong>: CK.ActivityMonitor.dll</h6>
+  <h5 id="CK_Core_ActivityMonitor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ActivityMonitor : IActivityMonitorImpl, IActivityMonitor, IUniqueId</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor__ctor.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L185">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor__ctor_" data-uid="CK.Core.ActivityMonitor.#ctor*"></a>
+  <h4 id="CK_Core_ActivityMonitor__ctor" data-uid="CK.Core.ActivityMonitor.#ctor">ActivityMonitor()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.ActivityMonitor.html">ActivityMonitor</a> that applies all <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_AutoConfiguration">AutoConfiguration</a> and has no <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_Topic">Topic</a> initially set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActivityMonitor()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor__ctor_CK_Core_Impl_ActivityMonitorOutput_CK_Core_CKTrait_System_Boolean_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.%23ctor(CK.Core.Impl.ActivityMonitorOutput%2CCK.Core.CKTrait%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L217">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor__ctor_" data-uid="CK.Core.ActivityMonitor.#ctor*"></a>
+  <h4 id="CK_Core_ActivityMonitor__ctor_CK_Core_Impl_ActivityMonitorOutput_CK_Core_CKTrait_System_Boolean_" data-uid="CK.Core.ActivityMonitor.#ctor(CK.Core.Impl.ActivityMonitorOutput,CK.Core.CKTrait,System.Boolean)">ActivityMonitor(ActivityMonitorOutput, CKTrait, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.ActivityMonitor.html">ActivityMonitor</a> with a specific <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_Output">Output</a> or null
+to postpone the setting of Output by using <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_SetOutput_CK_Core_Impl_ActivityMonitorOutput_">SetOutput(ActivityMonitorOutput)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ActivityMonitor(ActivityMonitorOutput output, CKTrait tags = null, bool applyAutoConfigurations = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.Impl.ActivityMonitorOutput.html">ActivityMonitorOutput</a></td>
+        <td><span class="parametername">output</span></td>
+        <td><p>The output to use. Can be null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CK.Core.CKTrait</span></td>
+        <td><span class="parametername">tags</span></td>
+        <td><p>Initial tags.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">applyAutoConfigurations</span></td>
+        <td><p>Whether <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_AutoConfiguration">AutoConfiguration</a> should be applied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor__ctor_System_Boolean_System_String_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.%23ctor(System.Boolean%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L205">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor__ctor_" data-uid="CK.Core.ActivityMonitor.#ctor*"></a>
+  <h4 id="CK_Core_ActivityMonitor__ctor_System_Boolean_System_String_" data-uid="CK.Core.ActivityMonitor.#ctor(System.Boolean,System.String)">ActivityMonitor(Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.ActivityMonitor.html">ActivityMonitor</a> that optionally applies <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_AutoConfiguration">AutoConfiguration</a> and with an initial topic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActivityMonitor(bool applyAutoConfigurations, string topic = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">applyAutoConfigurations</span></td>
+        <td><p>Whether <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_AutoConfiguration">AutoConfiguration</a> should be applied.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">topic</span></td>
+        <td><p>Optional initial topic (can be null).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor__ctor_System_String_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L194">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor__ctor_" data-uid="CK.Core.ActivityMonitor.#ctor*"></a>
+  <h4 id="CK_Core_ActivityMonitor__ctor_System_String_" data-uid="CK.Core.ActivityMonitor.#ctor(System.String)">ActivityMonitor(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="CK.Core.ActivityMonitor.html">ActivityMonitor</a> that applies all <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_AutoConfiguration">AutoConfiguration</a> and has an initial <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_Topic">Topic</a> set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActivityMonitor(string topic)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">topic</span></td>
+        <td><p>Initial topic (can be null).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_AutoConfiguration.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.AutoConfiguration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L153">View Source</a>
+  </span>
+  <h4 id="CK_Core_ActivityMonitor_AutoConfiguration" data-uid="CK.Core.ActivityMonitor.AutoConfiguration">AutoConfiguration</h4>
+  <div class="markdown level1 summary"><p>The automatic configuration actions.
+Registers actions via += (or <a class="xref" href="https://msdn.microsoft.com/en-us/library/30cyx32c(v=vs.110).aspx">Combine(Delegate, Delegate)</a> if you like pain), unregister with -= operator (or <a class="xref" href="https://msdn.microsoft.com/en-us/library/z96shxe0(v=vs.110).aspx">Remove(Delegate, Delegate)</a>).
+Simply sets it to null to clear all currently registered actions (this, of course, only from tests and not in real code).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;IActivityMonitor&gt; AutoConfiguration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/018hxwa8(v=vs.110).aspx">Action</a>&lt;<a class="xref" href="CK.Core.IActivityMonitor.html">IActivityMonitor</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_CriticalErrorCollector.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CriticalErrorCollector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L106">View Source</a>
+  </span>
+  <h4 id="CK_Core_ActivityMonitor_CriticalErrorCollector" data-uid="CK.Core.ActivityMonitor.CriticalErrorCollector">CriticalErrorCollector</h4>
+  <div class="markdown level1 summary"><p>The monitoring error collector. 
+Any error that occurs while dispatching logs to <a class="xref" href="CK.Core.IActivityMonitorClient.html">IActivityMonitorClient</a>
+are collected and the culprit is removed from <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_Output">Output</a>.
+See <span class="xref">CriticalErrorCollector</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly CriticalErrorCollector CriticalErrorCollector</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CK.Core.CriticalErrorCollector</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_NoLogText.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.NoLogText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L158">View Source</a>
+  </span>
+  <h4 id="CK_Core_ActivityMonitor_NoLogText" data-uid="CK.Core.ActivityMonitor.NoLogText">NoLogText</h4>
+  <div class="markdown level1 summary"><p>The no-log text replaces any null or empty log text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string NoLogText</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_ParkLevel.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.ParkLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L23">View Source</a>
+  </span>
+  <h4 id="CK_Core_ActivityMonitor_ParkLevel" data-uid="CK.Core.ActivityMonitor.ParkLevel">ParkLevel</h4>
+  <div class="markdown level1 summary"><p>String to use to break the current <a class="xref" href="CK.Core.LogLevel.html">LogLevel</a> (as if a different <a class="xref" href="CK.Core.LogLevel.html">LogLevel</a> was used).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ParkLevel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_SetTopicPrefix.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SetTopicPrefix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L18">View Source</a>
+  </span>
+  <h4 id="CK_Core_ActivityMonitor_SetTopicPrefix" data-uid="CK.Core.ActivityMonitor.SetTopicPrefix">SetTopicPrefix</h4>
+  <div class="markdown level1 summary"><p>Prefix used by <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_SetTopic_System_String_System_String_System_Int32_">SetTopic(String, String, Int32)</a> is &quot;Topic: &quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string SetTopicPrefix</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_ActualFilter.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.ActualFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L402">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_ActualFilter_" data-uid="CK.Core.ActivityMonitor.ActualFilter*"></a>
+  <h4 id="CK_Core_ActivityMonitor_ActualFilter" data-uid="CK.Core.ActivityMonitor.ActualFilter">ActualFilter</h4>
+  <div class="markdown level1 summary"><p>Gets the actual filter level for logs: this combines the configured <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_MinimalFilter">MinimalFilter</a> and the minimal requirements
+of any <a class="xref" href="CK.Core.IActivityMonitorBoundClient.html">IActivityMonitorBoundClient</a> that specifies such a minimal filter level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LogFilter ActualFilter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.LogFilter.html">LogFilter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_ActualFilter">IActivityMonitor.ActualFilter</a></div>
+  <h5 id="CK_Core_ActivityMonitor_ActualFilter_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This does NOT take into account the static (application-domain) <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_DefaultFilter">DefaultFilter</a>.
+This global default must be used if this ActualFilter is <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Undefined">Undefined</a> for <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> or <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a>: 
+the <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_ShouldLogLine_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_String_System_Int32_">ShouldLogLine(IActivityMonitor, LogLevel, String, Int32)</a> extension method takes it into account.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_AutoTags.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.AutoTags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L325">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_AutoTags_" data-uid="CK.Core.ActivityMonitor.AutoTags*"></a>
+  <h4 id="CK_Core_ActivityMonitor_AutoTags" data-uid="CK.Core.ActivityMonitor.AutoTags">AutoTags</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the tags of this monitor: any subsequent logs will be tagged by these tags.
+The <span class="xref">CK.Core.CKTrait</span> must be registered in <a class="xref" href="CK.Core.ActivityMonitor.Tags.html">ActivityMonitor.Tags</a>.
+Modifications to this property are scoped to the current Group since when a Group is closed, this
+property (like <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_MinimalFilter">MinimalFilter</a>) is automatically restored to its original value (captured when the Group was opened).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CKTrait AutoTags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CK.Core.CKTrait</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_AutoTags">IActivityMonitor.AutoTags</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_CurrentGroup.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CurrentGroup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.Group.cs/#L235">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_CurrentGroup_" data-uid="CK.Core.ActivityMonitor.CurrentGroup*"></a>
+  <h4 id="CK_Core_ActivityMonitor_CurrentGroup" data-uid="CK.Core.ActivityMonitor.CurrentGroup">CurrentGroup</h4>
+  <div class="markdown level1 summary"><p>Gets the currently opened group.
+Null when no group is currently opened.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IActivityLogGroup CurrentGroup { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.IActivityLogGroup.html">IActivityLogGroup</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_DefaultFilter.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.DefaultFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L121">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_DefaultFilter_" data-uid="CK.Core.ActivityMonitor.DefaultFilter*"></a>
+  <h4 id="CK_Core_ActivityMonitor_DefaultFilter" data-uid="CK.Core.ActivityMonitor.DefaultFilter">DefaultFilter</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the default filter that should be used when the <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_ActualFilter">ActualFilter</a> is <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Undefined">Undefined</a>.
+This configuration is per application domain (the backing field is static).
+It defaults to <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Trace">Trace</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LogFilter DefaultFilter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.LogFilter.html">LogFilter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_LastLogTime.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.LastLogTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L278">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_LastLogTime_" data-uid="CK.Core.ActivityMonitor.LastLogTime*"></a>
+  <h4 id="CK_Core_ActivityMonitor_LastLogTime" data-uid="CK.Core.ActivityMonitor.LastLogTime">LastLogTime</h4>
+  <div class="markdown level1 summary"><p>Gets the last <span class="xref">CK.Core.DateTimeStamp</span> for this monitor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeStamp LastLogTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CK.Core.DateTimeStamp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_LastLogTime">IActivityMonitor.LastLogTime</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_MinimalFilter.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.MinimalFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L373">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_MinimalFilter_" data-uid="CK.Core.ActivityMonitor.MinimalFilter*"></a>
+  <h4 id="CK_Core_ActivityMonitor_MinimalFilter" data-uid="CK.Core.ActivityMonitor.MinimalFilter">MinimalFilter</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a filter based for the log level.
+Modifications to this property are scoped to the current Group since when a Group is closed, this
+property (like <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_AutoTags">AutoTags</a>) is automatically restored to its original value (captured when the Group was opened).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LogFilter MinimalFilter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.LogFilter.html">LogFilter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_MinimalFilter">IActivityMonitor.MinimalFilter</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_Output.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.Output%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L263">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_Output_" data-uid="CK.Core.ActivityMonitor.Output*"></a>
+  <h4 id="CK_Core_ActivityMonitor_Output" data-uid="CK.Core.ActivityMonitor.Output">Output</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="CK.Core.IActivityMonitorOutput.html">IActivityMonitorOutput</a> for this monitor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IActivityMonitorOutput Output { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.IActivityMonitorOutput.html">IActivityMonitorOutput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_Output">IActivityMonitor.Output</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_Topic.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.Topic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L285">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_Topic_" data-uid="CK.Core.ActivityMonitor.Topic*"></a>
+  <h4 id="CK_Core_ActivityMonitor_Topic" data-uid="CK.Core.ActivityMonitor.Topic">Topic</h4>
+  <div class="markdown level1 summary"><p>Gets the current topic for this monitor. This can be any non null string (null topic is mapped to the empty string) that describes
+the current activity. It must be set with <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_SetTopic_System_String_System_String_System_Int32_">SetTopic(String, String, Int32)</a> and unlike <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_MinimalFilter">MinimalFilter</a> and <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_AutoTags">AutoTags</a>, 
+the topic is not reseted when groups are closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Topic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_Topic">IActivityMonitor.Topic</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_UniqueId.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.UniqueId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L247">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_UniqueId_" data-uid="CK.Core.ActivityMonitor.UniqueId*"></a>
+  <h4 id="CK_Core_ActivityMonitor_UniqueId" data-uid="CK.Core.ActivityMonitor.UniqueId">UniqueId</h4>
+  <div class="markdown level1 summary"><p>Gets the unique identifier for this monitor.
+It is a <a class="xref" href="https://msdn.microsoft.com/en-us/library/b49320df(v=vs.110).aspx">NewGuid()</a> by default but specialized implementations can set it
+via the protected <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_SetUniqueId_System_Guid_">SetUniqueId(Guid)</a> if a unique identifier exists in the context 
+that can more easily identify this activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Guid UniqueId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.guid(v=vs.110).aspx">Guid</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_CloseGroup_CK_Core_DateTimeStamp_System_Object_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CloseGroup(CK.Core.DateTimeStamp%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L698">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_CloseGroup_" data-uid="CK.Core.ActivityMonitor.CloseGroup*"></a>
+  <h4 id="CK_Core_ActivityMonitor_CloseGroup_CK_Core_DateTimeStamp_System_Object_" data-uid="CK.Core.ActivityMonitor.CloseGroup(CK.Core.DateTimeStamp,System.Object)">CloseGroup(DateTimeStamp, Object)</h4>
+  <div class="markdown level1 summary"><p>Closes the current <a class="xref" href="CK.Core.ActivityMonitor.Group.html">ActivityMonitor.Group</a>. Optional parameter is polymorphic. It can be a string, a <a class="xref" href="CK.Core.ActivityLogGroupConclusion.html">ActivityLogGroupConclusion</a>, 
+a <a class="xref" href="https://msdn.microsoft.com/en-us/library/6sh2ey19(v=vs.110).aspx">List&lt;T&gt;</a> or an <a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable&lt;T&gt;</a> of ActivityLogGroupConclusion, or any object with an overridden <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">ToString()</a> method. 
+See remarks (especially for List&lt;ActivityLogGroupConclusion&gt;).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CloseGroup(DateTimeStamp logTime, object userConclusion = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CK.Core.DateTimeStamp</span></td>
+        <td><span class="parametername">logTime</span></td>
+        <td><p>Times-tamp of the group closing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></td>
+        <td><span class="parametername">userConclusion</span></td>
+        <td><p>Optional string, enumerable of <a class="xref" href="CK.Core.ActivityLogGroupConclusion.html">ActivityLogGroupConclusion</a>) or object to conclude the group. See remarks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_CloseGroup_CK_Core_DateTimeStamp_System_Object_">IActivityMonitor.CloseGroup(DateTimeStamp, Object)</a></div>
+  <h5 id="CK_Core_ActivityMonitor_CloseGroup_CK_Core_DateTimeStamp_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>An untyped object is used here to easily and efficiently accommodate both string and already existing ActivityLogGroupConclusion.
+When a List&lt;ActivityLogGroupConclusion&gt; is used, it will be directly used to collect conclusion objects (new conclusions will be added to it). This is an optimization.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_ReentrancyAndConcurrencyLock.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.ReentrancyAndConcurrencyLock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L862">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_ReentrancyAndConcurrencyLock_" data-uid="CK.Core.ActivityMonitor.ReentrancyAndConcurrencyLock*"></a>
+  <h4 id="CK_Core_ActivityMonitor_ReentrancyAndConcurrencyLock" data-uid="CK.Core.ActivityMonitor.ReentrancyAndConcurrencyLock">ReentrancyAndConcurrencyLock()</h4>
+  <div class="markdown level1 summary"><p>Gets a disposable object that checks for reentrant and concurrent calls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IDisposable ReentrancyAndConcurrencyLock()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.idisposable(v=vs.110).aspx">IDisposable</a></td>
+        <td><p>A disposable object (that must be disposed).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_SetOutput_CK_Core_Impl_ActivityMonitorOutput_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SetOutput(CK.Core.Impl.ActivityMonitorOutput)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L269">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_SetOutput_" data-uid="CK.Core.ActivityMonitor.SetOutput*"></a>
+  <h4 id="CK_Core_ActivityMonitor_SetOutput_CK_Core_Impl_ActivityMonitorOutput_" data-uid="CK.Core.ActivityMonitor.SetOutput(CK.Core.Impl.ActivityMonitorOutput)">SetOutput(ActivityMonitorOutput)</h4>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_Output">Output</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetOutput(ActivityMonitorOutput output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.Impl.ActivityMonitorOutput.html">ActivityMonitorOutput</a></td>
+        <td><span class="parametername">output</span></td>
+        <td><p>Can not be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_SetTopic_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SetTopic(System.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L291">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_SetTopic_" data-uid="CK.Core.ActivityMonitor.SetTopic*"></a>
+  <h4 id="CK_Core_ActivityMonitor_SetTopic_System_String_System_String_System_Int32_" data-uid="CK.Core.ActivityMonitor.SetTopic(System.String,System.String,System.Int32)">SetTopic(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the current topic for this monitor. This can be any non null string (null topic is mapped to the empty string) that describes
+the current activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTopic(string newTopic, string fileName = null, int lineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">newTopic</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">lineNumber</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_SetTopic_System_String_System_String_System_Int32_">IActivityMonitor.SetTopic(String, String, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_SetUniqueId_System_Guid_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SetUniqueId(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L255">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_SetUniqueId_" data-uid="CK.Core.ActivityMonitor.SetUniqueId*"></a>
+  <h4 id="CK_Core_ActivityMonitor_SetUniqueId_System_Guid_" data-uid="CK.Core.ActivityMonitor.SetUniqueId(System.Guid)">SetUniqueId(Guid)</h4>
+  <div class="markdown level1 summary"><p>Sets the unique identifier of this activity monitor.
+This must be used only during monitor construction or initialization, before the 
+monitor is actually used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetUniqueId(Guid uniqueId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.guid(v=vs.110).aspx">Guid</a></td>
+        <td><span class="parametername">uniqueId</span></td>
+        <td><p>New unique identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_UnfilteredLog_CK_Core_ActivityMonitorLogData_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.UnfilteredLog(CK.Core.ActivityMonitorLogData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L555">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_UnfilteredLog_" data-uid="CK.Core.ActivityMonitor.UnfilteredLog*"></a>
+  <h4 id="CK_Core_ActivityMonitor_UnfilteredLog_CK_Core_ActivityMonitorLogData_" data-uid="CK.Core.ActivityMonitor.UnfilteredLog(CK.Core.ActivityMonitorLogData)">UnfilteredLog(ActivityMonitorLogData)</h4>
+  <div class="markdown level1 summary"><p>Logs a text regardless of <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_MinimalFilter">MinimalFilter</a> level (except for <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter_Off">Off</a>). 
+Each call to log is considered as a unit of text: depending on the rendering engine, a line or a 
+paragraph separator (or any appropriate separator) should be appended between each text if 
+the level is the same as the previous one.
+See remarks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnfilteredLog(ActivityMonitorLogData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.ActivityMonitorLogData.html">ActivityMonitorLogData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Data that describes the log. When null or when <a class="xref" href="CK.Core.ActivityMonitorLogData.html#CK_Core_ActivityMonitorLogData_MaskedLevel">MaskedLevel</a> 
+is <a class="xref" href="CK.Core.LogLevel.html#CK_Core_LogLevel_None">None</a>, nothing happens (whereas for group, a rejected group is recorded and returned).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_UnfilteredLog_CK_Core_ActivityMonitorLogData_">IActivityMonitor.UnfilteredLog(ActivityMonitorLogData)</a></div>
+  <h5 id="CK_Core_ActivityMonitor_UnfilteredLog_CK_Core_ActivityMonitorLogData__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A null or empty <a class="xref" href="CK.Core.ActivityMonitorLogData.html#CK_Core_ActivityMonitorLogData_Text">Text</a> is logged as <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_NoLogText">NoLogText</a>.
+If needed, the special text <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_ParkLevel">ParkLevel</a> (&quot;PARK-LEVEL&quot;) breaks the current <a class="xref" href="CK.Core.LogLevel.html">LogLevel</a>
+and resets it: the next log, even with the same LogLevel, will be treated as if a different LogLevel is used.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_UnfilteredOpenGroup_CK_Core_ActivityMonitorGroupData_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.UnfilteredOpenGroup(CK.Core.ActivityMonitorGroupData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L637">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_UnfilteredOpenGroup_" data-uid="CK.Core.ActivityMonitor.UnfilteredOpenGroup*"></a>
+  <h4 id="CK_Core_ActivityMonitor_UnfilteredOpenGroup_CK_Core_ActivityMonitorGroupData_" data-uid="CK.Core.ActivityMonitor.UnfilteredOpenGroup(CK.Core.ActivityMonitorGroupData)">UnfilteredOpenGroup(ActivityMonitorGroupData)</h4>
+  <div class="markdown level1 summary"><p>Opens a group regardless of <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_ActualFilter">ActualFilter</a> level (except for <a class="xref" href="CK.Core.LogLevelFilter.html#CK_Core_LogLevelFilter_Off">Off</a>). 
+<a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_CloseGroup_CK_Core_DateTimeStamp_System_Object_">CloseGroup(DateTimeStamp, Object)</a> must be called in order to close the group, and/or the returned object must be disposed (both can be called safely: 
+the group is closed on the first action, any other attempt to close it again is ignored).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IDisposableGroup UnfilteredOpenGroup(ActivityMonitorGroupData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.ActivityMonitorGroupData.html">ActivityMonitorGroupData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Data that describes the log. When null or when <a class="xref" href="CK.Core.ActivityMonitorLogData.html#CK_Core_ActivityMonitorLogData_MaskedLevel">MaskedLevel</a> 
+is <a class="xref" href="CK.Core.LogLevel.html#CK_Core_LogLevel_None">None</a> a rejected group is recorded and returned and must be closed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.IDisposableGroup.html">IDisposableGroup</a></td>
+        <td><p>A disposable object that can be used to set a function that provides a conclusion text and/or close the group.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_UnfilteredOpenGroup_CK_Core_ActivityMonitorGroupData_">IActivityMonitor.UnfilteredOpenGroup(ActivityMonitorGroupData)</a></div>
+  <h5 id="CK_Core_ActivityMonitor_UnfilteredOpenGroup_CK_Core_ActivityMonitorGroupData__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+Opening a group does not change the current <a class="xref" href="CK.Core.ActivityMonitor.html#CK_Core_ActivityMonitor_MinimalFilter">MinimalFilter</a>, except when opening a <a class="xref" href="CK.Core.LogLevel.html#CK_Core_LogLevel_Fatal">Fatal</a> or <a class="xref" href="CK.Core.LogLevel.html#CK_Core_LogLevel_Error">Error</a> group:
+in such case, the MinimalFilter is automatically sets to <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Debug">Debug</a> to capture all potential information inside the error group.
+</p>
+<p>
+Changes to the monitor&apos;s current Filter or AutoTags that occur inside a group are automatically restored to their original values when the group is closed.
+This behavior guaranties that a local modification (deep inside unknown called code) does not impact caller code: groups are a way to easily isolate such 
+configuration changes.
+</p>
+<p>
+Note that this automatic configuration restoration works even if the group has been filtered and rejected.
+</p>
+</div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_CurrentGroup.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CK%23Core%23Impl%23IActivityMonitorImpl%23CurrentGroup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.Group.cs/#L229">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_CurrentGroup_" data-uid="CK.Core.ActivityMonitor.CK#Core#Impl#IActivityMonitorImpl#CurrentGroup*"></a>
+  <h4 id="CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_CurrentGroup" data-uid="CK.Core.ActivityMonitor.CK#Core#Impl#IActivityMonitorImpl#CurrentGroup">IActivityMonitorImpl.CurrentGroup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IActivityLogGroup IActivityMonitorImpl.CurrentGroup { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.IActivityLogGroup.html">IActivityLogGroup</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.Impl.IActivityMonitorImpl.html#CK_Core_Impl_IActivityMonitorImpl_CurrentGroup">IActivityMonitorImpl.CurrentGroup</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_InitializeTopicAndAutoTags_System_String_CK_Core_CKTrait_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CK%23Core%23Impl%23IActivityMonitorImpl%23InitializeTopicAndAutoTags(System.String%2CCK.Core.CKTrait%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L361">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_InitializeTopicAndAutoTags_" data-uid="CK.Core.ActivityMonitor.CK#Core#Impl#IActivityMonitorImpl#InitializeTopicAndAutoTags*"></a>
+  <h4 id="CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_InitializeTopicAndAutoTags_System_String_CK_Core_CKTrait_System_String_System_Int32_" data-uid="CK.Core.ActivityMonitor.CK#Core#Impl#IActivityMonitorImpl#InitializeTopicAndAutoTags(System.String,CK.Core.CKTrait,System.String,System.Int32)">IActivityMonitorImpl.InitializeTopicAndAutoTags(String, CKTrait, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Called by IActivityMonitorBoundClient clients to initialize Topic and AutoTag from 
+inside their SetMonitor or any other methods provided that a reentrant and concurrent lock 
+has been obtained (otherwise an InvalidOperationException is thrown).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IActivityMonitorImpl.InitializeTopicAndAutoTags(string newTopic, CKTrait newTags, string fileName, int lineNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">newTopic</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CK.Core.CKTrait</span></td>
+        <td><span class="parametername">newTags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">lineNumber</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.Impl.IActivityMonitorImpl.html#CK_Core_Impl_IActivityMonitorImpl_InitializeTopicAndAutoTags_System_String_CK_Core_CKTrait_System_String_System_Int32_">IActivityMonitorImpl.InitializeTopicAndAutoTags(String, CKTrait, String, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_OnClientMinimalFilterChanged_CK_Core_LogFilter_CK_Core_LogFilter_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CK%23Core%23Impl%23IActivityMonitorImpl%23OnClientMinimalFilterChanged(CK.Core.LogFilter%2CCK.Core.LogFilter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L499">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_OnClientMinimalFilterChanged_" data-uid="CK.Core.ActivityMonitor.CK#Core#Impl#IActivityMonitorImpl#OnClientMinimalFilterChanged*"></a>
+  <h4 id="CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_OnClientMinimalFilterChanged_CK_Core_LogFilter_CK_Core_LogFilter_" data-uid="CK.Core.ActivityMonitor.CK#Core#Impl#IActivityMonitorImpl#OnClientMinimalFilterChanged(CK.Core.LogFilter,CK.Core.LogFilter)">IActivityMonitorImpl.OnClientMinimalFilterChanged(LogFilter, LogFilter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IActivityMonitorImpl.OnClientMinimalFilterChanged(LogFilter oldLevel, LogFilter newLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.LogFilter.html">LogFilter</a></td>
+        <td><span class="parametername">oldLevel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CK.Core.LogFilter.html">LogFilter</a></td>
+        <td><span class="parametername">newLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.Impl.IActivityMonitorImpl.html#CK_Core_Impl_IActivityMonitorImpl_OnClientMinimalFilterChanged_CK_Core_LogFilter_CK_Core_LogFilter_">IActivityMonitorImpl.OnClientMinimalFilterChanged(LogFilter, LogFilter)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_ReentrancyAndConcurrencyLock.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CK%23Core%23Impl%23IActivityMonitorImpl%23ReentrancyAndConcurrencyLock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L853">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_ReentrancyAndConcurrencyLock_" data-uid="CK.Core.ActivityMonitor.CK#Core#Impl#IActivityMonitorImpl#ReentrancyAndConcurrencyLock*"></a>
+  <h4 id="CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_ReentrancyAndConcurrencyLock" data-uid="CK.Core.ActivityMonitor.CK#Core#Impl#IActivityMonitorImpl#ReentrancyAndConcurrencyLock">IActivityMonitorImpl.ReentrancyAndConcurrencyLock()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDisposable IActivityMonitorImpl.ReentrancyAndConcurrencyLock()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.idisposable(v=vs.110).aspx">IDisposable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.Impl.IActivityMonitorImpl.html#CK_Core_Impl_IActivityMonitorImpl_ReentrancyAndConcurrencyLock">IActivityMonitorImpl.ReentrancyAndConcurrencyLock()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_SignalChange.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CK%23Core%23Impl%23IActivityMonitorImpl%23SignalChange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L488">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_SignalChange_" data-uid="CK.Core.ActivityMonitor.CK#Core#Impl#IActivityMonitorImpl#SignalChange*"></a>
+  <h4 id="CK_Core_ActivityMonitor_CK_Core_Impl_IActivityMonitorImpl_SignalChange" data-uid="CK.Core.ActivityMonitor.CK#Core#Impl#IActivityMonitorImpl#SignalChange">IActivityMonitorImpl.SignalChange()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IActivityMonitorImpl.SignalChange()</code></pre>
+  </div>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.Impl.IActivityMonitorImpl.html#CK_Core_Impl_IActivityMonitorImpl_SignalChange">IActivityMonitorImpl.SignalChange()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_CK_Core_IUniqueId_UniqueId.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.CK%23Core%23IUniqueId%23UniqueId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.cs/#L239">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_CK_Core_IUniqueId_UniqueId_" data-uid="CK.Core.ActivityMonitor.CK#Core#IUniqueId#UniqueId*"></a>
+  <h4 id="CK_Core_ActivityMonitor_CK_Core_IUniqueId_UniqueId" data-uid="CK.Core.ActivityMonitor.CK#Core#IUniqueId#UniqueId">IUniqueId.UniqueId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Guid IUniqueId.UniqueId { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.guid(v=vs.110).aspx">Guid</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IUniqueId.html#CK_Core_IUniqueId_UniqueId">IUniqueId.UniqueId</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenDebug_CK_Core_IActivityMonitor_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenDebug(IActivityMonitor, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenDebug_CK_Core_IActivityMonitor_System_String_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenDebug(IActivityMonitor, String, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenDebug_CK_Core_IActivityMonitor_System_String_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenDebug(IActivityMonitor, String, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenDebug_CK_Core_IActivityMonitor_System_Func_System_String__System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenDebug(IActivityMonitor, Func&lt;String&gt;, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenDebug_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenDebug(IActivityMonitor, Func&lt;String&gt;, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenDebug_CK_Core_IActivityMonitor_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenDebug(IActivityMonitor, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenDebug_CK_Core_IActivityMonitor_System_String_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenDebug(IActivityMonitor, String, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenDebug_CK_Core_IActivityMonitor_System_String_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenDebug(IActivityMonitor, String, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenDebug_CK_Core_IActivityMonitor_System_Func_System_String__CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenDebug(IActivityMonitor, Func&lt;String&gt;, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenDebug_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenDebug(IActivityMonitor, Func&lt;String&gt;, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenTrace_CK_Core_IActivityMonitor_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenTrace(IActivityMonitor, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenTrace_CK_Core_IActivityMonitor_System_String_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenTrace(IActivityMonitor, String, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenTrace_CK_Core_IActivityMonitor_System_String_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenTrace(IActivityMonitor, String, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenTrace_CK_Core_IActivityMonitor_System_Func_System_String__System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenTrace(IActivityMonitor, Func&lt;String&gt;, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenTrace_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenTrace(IActivityMonitor, Func&lt;String&gt;, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenTrace_CK_Core_IActivityMonitor_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenTrace(IActivityMonitor, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenTrace_CK_Core_IActivityMonitor_System_String_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenTrace(IActivityMonitor, String, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenTrace_CK_Core_IActivityMonitor_System_String_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenTrace(IActivityMonitor, String, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenTrace_CK_Core_IActivityMonitor_System_Func_System_String__CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenTrace(IActivityMonitor, Func&lt;String&gt;, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenTrace_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenTrace(IActivityMonitor, Func&lt;String&gt;, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenInfo_CK_Core_IActivityMonitor_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenInfo(IActivityMonitor, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenInfo_CK_Core_IActivityMonitor_System_String_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenInfo(IActivityMonitor, String, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenInfo_CK_Core_IActivityMonitor_System_String_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenInfo(IActivityMonitor, String, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenInfo_CK_Core_IActivityMonitor_System_Func_System_String__System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenInfo(IActivityMonitor, Func&lt;String&gt;, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenInfo_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenInfo(IActivityMonitor, Func&lt;String&gt;, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenInfo_CK_Core_IActivityMonitor_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenInfo(IActivityMonitor, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenInfo_CK_Core_IActivityMonitor_System_String_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenInfo(IActivityMonitor, String, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenInfo_CK_Core_IActivityMonitor_System_String_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenInfo(IActivityMonitor, String, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenInfo_CK_Core_IActivityMonitor_System_Func_System_String__CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenInfo(IActivityMonitor, Func&lt;String&gt;, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenInfo_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenInfo(IActivityMonitor, Func&lt;String&gt;, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenWarn_CK_Core_IActivityMonitor_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenWarn(IActivityMonitor, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenWarn_CK_Core_IActivityMonitor_System_String_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenWarn(IActivityMonitor, String, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenWarn_CK_Core_IActivityMonitor_System_String_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenWarn(IActivityMonitor, String, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenWarn_CK_Core_IActivityMonitor_System_Func_System_String__System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenWarn(IActivityMonitor, Func&lt;String&gt;, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenWarn_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenWarn(IActivityMonitor, Func&lt;String&gt;, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenWarn_CK_Core_IActivityMonitor_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenWarn(IActivityMonitor, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenWarn_CK_Core_IActivityMonitor_System_String_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenWarn(IActivityMonitor, String, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenWarn_CK_Core_IActivityMonitor_System_String_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenWarn(IActivityMonitor, String, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenWarn_CK_Core_IActivityMonitor_System_Func_System_String__CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenWarn(IActivityMonitor, Func&lt;String&gt;, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenWarn_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenWarn(IActivityMonitor, Func&lt;String&gt;, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenError_CK_Core_IActivityMonitor_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenError(IActivityMonitor, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenError_CK_Core_IActivityMonitor_System_String_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenError(IActivityMonitor, String, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenError_CK_Core_IActivityMonitor_System_String_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenError(IActivityMonitor, String, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenError_CK_Core_IActivityMonitor_System_Func_System_String__System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenError(IActivityMonitor, Func&lt;String&gt;, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenError_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenError(IActivityMonitor, Func&lt;String&gt;, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenError_CK_Core_IActivityMonitor_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenError(IActivityMonitor, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenError_CK_Core_IActivityMonitor_System_String_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenError(IActivityMonitor, String, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenError_CK_Core_IActivityMonitor_System_String_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenError(IActivityMonitor, String, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenError_CK_Core_IActivityMonitor_System_Func_System_String__CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenError(IActivityMonitor, Func&lt;String&gt;, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenError_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenError(IActivityMonitor, Func&lt;String&gt;, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenFatal_CK_Core_IActivityMonitor_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenFatal(IActivityMonitor, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenFatal_CK_Core_IActivityMonitor_System_String_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenFatal(IActivityMonitor, String, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenFatal_CK_Core_IActivityMonitor_System_String_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenFatal(IActivityMonitor, String, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenFatal_CK_Core_IActivityMonitor_System_Func_System_String__System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenFatal(IActivityMonitor, Func&lt;String&gt;, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenFatal_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenFatal(IActivityMonitor, Func&lt;String&gt;, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenFatal_CK_Core_IActivityMonitor_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenFatal(IActivityMonitor, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenFatal_CK_Core_IActivityMonitor_System_String_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenFatal(IActivityMonitor, String, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenFatal_CK_Core_IActivityMonitor_System_String_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenFatal(IActivityMonitor, String, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenFatal_CK_Core_IActivityMonitor_System_Func_System_String__CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenFatal(IActivityMonitor, Func&lt;String&gt;, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenFatal_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenFatal(IActivityMonitor, Func&lt;String&gt;, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenGroup_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenGroup(IActivityMonitor, LogLevel, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenGroup_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_String_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenGroup(IActivityMonitor, LogLevel, String, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenGroup_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_String_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenGroup(IActivityMonitor, LogLevel, String, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenGroup_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_Func_System_String__System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenGroup(IActivityMonitor, LogLevel, Func&lt;String&gt;, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenGroup_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_Func_System_String__System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenGroup(IActivityMonitor, LogLevel, Func&lt;String&gt;, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenGroup_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenGroup(IActivityMonitor, LogLevel, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenGroup_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_String_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenGroup(IActivityMonitor, LogLevel, String, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenGroup_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_String_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenGroup(IActivityMonitor, LogLevel, String, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenGroup_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_Func_System_String__CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenGroup(IActivityMonitor, LogLevel, Func&lt;String&gt;, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_OpenGroup_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_Func_System_String__System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.OpenGroup(IActivityMonitor, LogLevel, Func&lt;String&gt;, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Debug_CK_Core_IActivityMonitor_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Debug(IActivityMonitor, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Debug_CK_Core_IActivityMonitor_System_String_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Debug(IActivityMonitor, String, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Debug_CK_Core_IActivityMonitor_System_String_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Debug(IActivityMonitor, String, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Debug_CK_Core_IActivityMonitor_System_Func_System_String__System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Debug(IActivityMonitor, Func&lt;String&gt;, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Debug_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Debug(IActivityMonitor, Func&lt;String&gt;, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Debug_CK_Core_IActivityMonitor_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Debug(IActivityMonitor, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Debug_CK_Core_IActivityMonitor_System_String_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Debug(IActivityMonitor, String, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Debug_CK_Core_IActivityMonitor_System_String_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Debug(IActivityMonitor, String, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Debug_CK_Core_IActivityMonitor_System_Func_System_String__CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Debug(IActivityMonitor, Func&lt;String&gt;, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Debug_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Debug(IActivityMonitor, Func&lt;String&gt;, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Trace_CK_Core_IActivityMonitor_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Trace(IActivityMonitor, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Trace_CK_Core_IActivityMonitor_System_String_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Trace(IActivityMonitor, String, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Trace_CK_Core_IActivityMonitor_System_String_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Trace(IActivityMonitor, String, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Trace_CK_Core_IActivityMonitor_System_Func_System_String__System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Trace(IActivityMonitor, Func&lt;String&gt;, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Trace_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Trace(IActivityMonitor, Func&lt;String&gt;, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Trace_CK_Core_IActivityMonitor_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Trace(IActivityMonitor, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Trace_CK_Core_IActivityMonitor_System_String_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Trace(IActivityMonitor, String, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Trace_CK_Core_IActivityMonitor_System_String_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Trace(IActivityMonitor, String, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Trace_CK_Core_IActivityMonitor_System_Func_System_String__CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Trace(IActivityMonitor, Func&lt;String&gt;, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Trace_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Trace(IActivityMonitor, Func&lt;String&gt;, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Info_CK_Core_IActivityMonitor_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Info(IActivityMonitor, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Info_CK_Core_IActivityMonitor_System_String_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Info(IActivityMonitor, String, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Info_CK_Core_IActivityMonitor_System_String_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Info(IActivityMonitor, String, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Info_CK_Core_IActivityMonitor_System_Func_System_String__System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Info(IActivityMonitor, Func&lt;String&gt;, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Info_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Info(IActivityMonitor, Func&lt;String&gt;, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Info_CK_Core_IActivityMonitor_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Info(IActivityMonitor, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Info_CK_Core_IActivityMonitor_System_String_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Info(IActivityMonitor, String, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Info_CK_Core_IActivityMonitor_System_String_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Info(IActivityMonitor, String, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Info_CK_Core_IActivityMonitor_System_Func_System_String__CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Info(IActivityMonitor, Func&lt;String&gt;, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Info_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Info(IActivityMonitor, Func&lt;String&gt;, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Warn_CK_Core_IActivityMonitor_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Warn(IActivityMonitor, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Warn_CK_Core_IActivityMonitor_System_String_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Warn(IActivityMonitor, String, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Warn_CK_Core_IActivityMonitor_System_String_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Warn(IActivityMonitor, String, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Warn_CK_Core_IActivityMonitor_System_Func_System_String__System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Warn(IActivityMonitor, Func&lt;String&gt;, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Warn_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Warn(IActivityMonitor, Func&lt;String&gt;, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Warn_CK_Core_IActivityMonitor_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Warn(IActivityMonitor, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Warn_CK_Core_IActivityMonitor_System_String_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Warn(IActivityMonitor, String, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Warn_CK_Core_IActivityMonitor_System_String_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Warn(IActivityMonitor, String, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Warn_CK_Core_IActivityMonitor_System_Func_System_String__CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Warn(IActivityMonitor, Func&lt;String&gt;, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Warn_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Warn(IActivityMonitor, Func&lt;String&gt;, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Error_CK_Core_IActivityMonitor_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Error(IActivityMonitor, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Error_CK_Core_IActivityMonitor_System_String_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Error(IActivityMonitor, String, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Error_CK_Core_IActivityMonitor_System_String_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Error(IActivityMonitor, String, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Error_CK_Core_IActivityMonitor_System_Func_System_String__System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Error(IActivityMonitor, Func&lt;String&gt;, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Error_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Error(IActivityMonitor, Func&lt;String&gt;, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Error_CK_Core_IActivityMonitor_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Error(IActivityMonitor, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Error_CK_Core_IActivityMonitor_System_String_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Error(IActivityMonitor, String, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Error_CK_Core_IActivityMonitor_System_String_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Error(IActivityMonitor, String, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Error_CK_Core_IActivityMonitor_System_Func_System_String__CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Error(IActivityMonitor, Func&lt;String&gt;, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Error_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Error(IActivityMonitor, Func&lt;String&gt;, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Fatal_CK_Core_IActivityMonitor_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Fatal(IActivityMonitor, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Fatal_CK_Core_IActivityMonitor_System_String_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Fatal(IActivityMonitor, String, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Fatal_CK_Core_IActivityMonitor_System_String_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Fatal(IActivityMonitor, String, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Fatal_CK_Core_IActivityMonitor_System_Func_System_String__System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Fatal(IActivityMonitor, Func&lt;String&gt;, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Fatal_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Fatal(IActivityMonitor, Func&lt;String&gt;, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Fatal_CK_Core_IActivityMonitor_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Fatal(IActivityMonitor, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Fatal_CK_Core_IActivityMonitor_System_String_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Fatal(IActivityMonitor, String, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Fatal_CK_Core_IActivityMonitor_System_String_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Fatal(IActivityMonitor, String, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Fatal_CK_Core_IActivityMonitor_System_Func_System_String__CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Fatal(IActivityMonitor, Func&lt;String&gt;, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Fatal_CK_Core_IActivityMonitor_System_Func_System_String__System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Fatal(IActivityMonitor, Func&lt;String&gt;, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Log_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Log(IActivityMonitor, LogLevel, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Log_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_String_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Log(IActivityMonitor, LogLevel, String, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Log_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_String_System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Log(IActivityMonitor, LogLevel, String, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Log_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_Func_System_String__System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Log(IActivityMonitor, LogLevel, Func&lt;String&gt;, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Log_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_Func_System_String__System_Exception_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Log(IActivityMonitor, LogLevel, Func&lt;String&gt;, Exception, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Log_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Log(IActivityMonitor, LogLevel, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Log_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_String_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Log(IActivityMonitor, LogLevel, String, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Log_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_String_System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Log(IActivityMonitor, LogLevel, String, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Log_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_Func_System_String__CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Log(IActivityMonitor, LogLevel, Func&lt;String&gt;, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html#CK_Core_ActivityMonitorSimpleSenderExtension_Log_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_Func_System_String__System_Exception_CKTrait_System_Int32_System_String_">ActivityMonitorSimpleSenderExtension.Log(IActivityMonitor, LogLevel, Func&lt;String&gt;, Exception, CKTrait, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_Debug_CK_Core_IActivityMonitor_System_Int32_System_String_">ActivityMonitorSenderExtension.Debug(IActivityMonitor, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_OpenDebug_CK_Core_IActivityMonitor_System_Int32_System_String_">ActivityMonitorSenderExtension.OpenDebug(IActivityMonitor, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_Trace_CK_Core_IActivityMonitor_System_Int32_System_String_">ActivityMonitorSenderExtension.Trace(IActivityMonitor, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_OpenTrace_CK_Core_IActivityMonitor_System_Int32_System_String_">ActivityMonitorSenderExtension.OpenTrace(IActivityMonitor, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_Info_CK_Core_IActivityMonitor_System_Int32_System_String_">ActivityMonitorSenderExtension.Info(IActivityMonitor, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_OpenInfo_CK_Core_IActivityMonitor_System_Int32_System_String_">ActivityMonitorSenderExtension.OpenInfo(IActivityMonitor, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_Warn_CK_Core_IActivityMonitor_System_Int32_System_String_">ActivityMonitorSenderExtension.Warn(IActivityMonitor, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_OpenWarn_CK_Core_IActivityMonitor_System_Int32_System_String_">ActivityMonitorSenderExtension.OpenWarn(IActivityMonitor, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_Error_CK_Core_IActivityMonitor_System_Int32_System_String_">ActivityMonitorSenderExtension.Error(IActivityMonitor, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_OpenError_CK_Core_IActivityMonitor_System_Int32_System_String_">ActivityMonitorSenderExtension.OpenError(IActivityMonitor, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_Fatal_CK_Core_IActivityMonitor_System_Int32_System_String_">ActivityMonitorSenderExtension.Fatal(IActivityMonitor, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorSenderExtension.html#CK_Core_ActivityMonitorSenderExtension_OpenFatal_CK_Core_IActivityMonitor_System_Int32_System_String_">ActivityMonitorSenderExtension.OpenFatal(IActivityMonitor, Int32, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_NextLogTime_CK_Core_IActivityMonitor_">ActivityMonitorExtension.NextLogTime(IActivityMonitor)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_MonitorEnd_CK_Core_IActivityMonitor_System_String_System_String_System_Int32_">ActivityMonitorExtension.MonitorEnd(IActivityMonitor, String, String, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_ShouldLogLine_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_String_System_Int32_">ActivityMonitorExtension.ShouldLogLine(IActivityMonitor, LogLevel, String, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_ShouldLogGroup_CK_Core_IActivityMonitor_CK_Core_LogLevel_System_String_System_Int32_">ActivityMonitorExtension.ShouldLogGroup(IActivityMonitor, LogLevel, String, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_UnfilteredLog_CK_Core_IActivityMonitor_CK_Core_CKTrait_CK_Core_LogLevel_System_String_CK_Core_DateTimeStamp_System_Exception_System_String_System_Int32_">ActivityMonitorExtension.UnfilteredLog(IActivityMonitor, CKTrait, LogLevel, String, DateTimeStamp, Exception, String, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_UnfilteredOpenGroup_CK_Core_IActivityMonitor_CK_Core_CKTrait_CK_Core_LogLevel_System_Func_System_String__System_String_CK_Core_DateTimeStamp_System_Exception_System_String_System_Int32_">ActivityMonitorExtension.UnfilteredOpenGroup(IActivityMonitor, CKTrait, LogLevel, Func&lt;String&gt;, String, DateTimeStamp, Exception, String, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_CloseGroup_CK_Core_IActivityMonitor_System_Object_">ActivityMonitorExtension.CloseGroup(IActivityMonitor, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_CollectEntries_CK_Core_IActivityMonitor_System_Action_System_Collections_Generic_IReadOnlyList_CK_Core_ActivityMonitorSimpleCollector_Entry___CK_Core_LogLevelFilter_">ActivityMonitorExtension.CollectEntries(IActivityMonitor, Action&lt;IReadOnlyList&lt;ActivityMonitorSimpleCollector.Entry&gt;&gt;, LogLevelFilter)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_OnError_CK_Core_IActivityMonitor_System_Action_">ActivityMonitorExtension.OnError(IActivityMonitor, Action)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_OnError_CK_Core_IActivityMonitor_System_Action_System_Action_">ActivityMonitorExtension.OnError(IActivityMonitor, Action, Action)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_TemporarilySetMinimalFilter_CK_Core_IActivityMonitor_CK_Core_LogLevelFilter_CK_Core_LogLevelFilter_">ActivityMonitorExtension.TemporarilySetMinimalFilter(IActivityMonitor, LogLevelFilter, LogLevelFilter)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_TemporarilySetMinimalFilter_CK_Core_IActivityMonitor_CK_Core_LogFilter_">ActivityMonitorExtension.TemporarilySetMinimalFilter(IActivityMonitor, LogFilter)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_TemporarilySetAutoTags_CK_Core_IActivityMonitor_CK_Core_CKTrait_CK_Core_SetOperation_">ActivityMonitorExtension.TemporarilySetAutoTags(IActivityMonitor, CKTrait, SetOperation)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_DependentActivity_CK_Core_IActivityMonitor_System_String_System_Int32_">ActivityMonitorExtension.DependentActivity(IActivityMonitor, String, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_StartDependentActivity_CK_Core_IActivityMonitor_CK_Core_ActivityMonitor_DependentToken_System_String_System_Int32_">ActivityMonitorExtension.StartDependentActivity(IActivityMonitor, ActivityMonitor.DependentToken, String, Int32)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.SourceFiltering.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2017 Invenietis<br>Generated by <strong><a href="https://dotnet.github.io/docfx/" target="_blank">DocFX</a></strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

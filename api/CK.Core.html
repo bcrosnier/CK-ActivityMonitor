@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace CK.Core
+   | CK-Text </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace CK.Core
+   | CK-Text ">
+    <meta name="generator" content="docfx 2.20.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="CK-Text">
+                <span class="app-name">CK-Text</span>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CK.Core">
+  
+  <h1 id="CK_Core" data-uid="CK.Core" class="text-break">Namespace CK.Core
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="CK.Core.ActivityMonitor.html">ActivityMonitor</a></h4>
+      <section><p>Concrete implementation of <a class="xref" href="CK.Core.IActivityMonitor.html">IActivityMonitor</a>.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitor.DependentToken.html">ActivityMonitor.DependentToken</a></h4>
+      <section><p>Describes the origin of a dependent activity: it is created by <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_DependentActivity_CK_Core_IActivityMonitor_System_String_System_Int32_">DependentActivity(IActivityMonitor, String, Int32)</a> 
+(extension methods).</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitor.Group.html">ActivityMonitor.Group</a></h4>
+      <section><p>Groups are bound to an <a class="xref" href="CK.Core.ActivityMonitor.html">ActivityMonitor</a> and are linked together from 
+the current one to the very first one (a kind of stack).</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitor.SourceFilter.html">ActivityMonitor.SourceFilter</a></h4>
+      <section><p>Manages source filtering.
+This default implementation (<a class="xref" href="CK.Core.ActivityMonitor.SourceFilter.html#CK_Core_ActivityMonitor_SourceFilter_DefaultFilter_System_String__System_Int32__">DefaultFilter(ref String, ref Int32)</a>) handles file scope only.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitor.Tags.html">ActivityMonitor.Tags</a></h4>
+      <section><p>Thread-safe context for tags used to categorize log entries (and group conclusions).
+All tags used in monitoring must be <a class="xref" href="CK.Core.ActivityMonitor.Tags.html#CK_Core_ActivityMonitor_Tags_Register_System_String_">Register(String)</a>ed here.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorBridge.html">ActivityMonitorBridge</a></h4>
+      <section><p>A <a class="xref" href="CK.Core.IActivityMonitorClient.html">IActivityMonitorClient</a> that relays what happens in a monitor to another monitor.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorBridgeTarget.html">ActivityMonitorBridgeTarget</a></h4>
+      <section><p>This class used with <a class="xref" href="CK.Core.ActivityMonitorBridge.html">ActivityMonitorBridge</a>, enables <a class="xref" href="CK.Core.IActivityMonitor.html">IActivityMonitor</a> to relay logs.
+Each activity monitor exposes such a bridge target on its output thanks to <a class="xref" href="CK.Core.IActivityMonitorOutput.html#CK_Core_IActivityMonitorOutput_BridgeTarget">BridgeTarget</a>.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorClient.html">ActivityMonitorClient</a></h4>
+      <section><p>Base class that explicitly implements <a class="xref" href="CK.Core.IActivityMonitorClient.html">IActivityMonitorClient</a> (to hide it from public interface, except its <a class="xref" href="CK.Core.ActivityMonitorClient.html#CK_Core_ActivityMonitorClient_MinimalFilter">MinimalFilter</a>).</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorConsoleClient.html">ActivityMonitorConsoleClient</a></h4>
+      <section><p>Displays the activity to the console.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorErrorCounter.html">ActivityMonitorErrorCounter</a></h4>
+      <section><p>Count fatal, error or warn that occurred. 
+It can also automatically adds a conclusion to closed groups that summarizes
+the number of fatals, errors and warnings.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorErrorCounter.State.html">ActivityMonitorErrorCounter.State</a></h4>
+      <section><p>Encapsulates error information.
+The <a class="xref" href="CK.Core.ActivityMonitorErrorCounter.State.html#CK_Core_ActivityMonitorErrorCounter_State_ToString">ToString()</a> method displays the conclusion in a default text format.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorExtension.html">ActivityMonitorExtension</a></h4>
+      <section><p>Provides extension methods for <a class="xref" href="CK.Core.IActivityMonitor.html">IActivityMonitor</a> and other types from the Activity monitor framework.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorGroupData.html">ActivityMonitorGroupData</a></h4>
+      <section><p>Data required by <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_UnfilteredOpenGroup_CK_Core_ActivityMonitorGroupData_">UnfilteredOpenGroup(ActivityMonitorGroupData)</a>.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorLogData.html">ActivityMonitorLogData</a></h4>
+      <section><p>Data required by <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_UnfilteredLog_CK_Core_ActivityMonitorLogData_">UnfilteredLog(ActivityMonitorLogData)</a>.
+This is also the base class for <a class="xref" href="CK.Core.ActivityMonitorGroupData.html">ActivityMonitorGroupData</a>.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html">ActivityMonitorPathCatcher</a></h4>
+      <section><p>The &quot;Path Catcher&quot; captures the current path of the opened groups and the last, current, line and exposes it thanks to 
+a read only list of <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.PathElement.html">ActivityMonitorPathCatcher.PathElement</a> (the <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html#CK_Core_ActivityMonitorPathCatcher_DynamicPath">DynamicPath</a> property),
+plus two other specific paths, the <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html#CK_Core_ActivityMonitorPathCatcher_LastErrorPath">LastErrorPath</a> and the <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html#CK_Core_ActivityMonitorPathCatcher_LastWarnOrErrorPath">LastWarnOrErrorPath</a>.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorPathCatcher.PathElement.html">ActivityMonitorPathCatcher.PathElement</a></h4>
+      <section><p>Element of the <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html#CK_Core_ActivityMonitorPathCatcher_DynamicPath">DynamicPath</a>, <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html#CK_Core_ActivityMonitorPathCatcher_LastErrorPath">LastErrorPath</a>,
+or <a class="xref" href="CK.Core.ActivityMonitorPathCatcher.html#CK_Core_ActivityMonitorPathCatcher_LastWarnOrErrorPath">LastWarnOrErrorPath</a>.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorSenderExtension.html">ActivityMonitorSenderExtension</a></h4>
+      <section><p>Provides OpenXXX and XXX (Trace, Info,...Fatal) extension methods for <a class="xref" href="CK.Core.IActivityMonitor.html">IActivityMonitor</a>.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorSendExtension.html">ActivityMonitorSendExtension</a></h4>
+      <section><p>Provides Send extension methods for <a class="xref" href="CK.Core.IActivityMonitorGroupSender.html">IActivityMonitorGroupSender</a>.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorSimpleCollector.html">ActivityMonitorSimpleCollector</a></h4>
+      <section><p>Simple collector of log entries which level is greater or equal to <a class="xref" href="CK.Core.ActivityMonitorSimpleCollector.html#CK_Core_ActivityMonitorSimpleCollector_MinimalFilter">MinimalFilter</a>.
+Its <a class="xref" href="CK.Core.ActivityMonitorSimpleCollector.html#CK_Core_ActivityMonitorSimpleCollector_Capacity">Capacity</a> defaults to 50 (no more than Capacity entries are kept).
+Used by the <a class="xref" href="CK.Core.ActivityMonitorExtension.html#CK_Core_ActivityMonitorExtension_CollectEntries_CK_Core_IActivityMonitor_System_Action_System_Collections_Generic_IReadOnlyList_CK_Core_ActivityMonitorSimpleCollector_Entry___CK_Core_LogLevelFilter_">CollectEntries(IActivityMonitor, Action&lt;IReadOnlyList&lt;ActivityMonitorSimpleCollector.Entry&gt;&gt;, LogLevelFilter)</a> extension method.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorSimpleCollector.Entry.html">ActivityMonitorSimpleCollector.Entry</a></h4>
+      <section><p>Element of the <a class="xref" href="CK.Core.ActivityMonitorSimpleCollector.html#CK_Core_ActivityMonitorSimpleCollector_Entries">Entries</a>.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorSimpleSenderExtension.html">ActivityMonitorSimpleSenderExtension</a></h4>
+      <section><p>Provides OpenXXX and XXX (Debug, Trace, Info,...Fatal) extension methods for <a class="xref" href="CK.Core.IActivityMonitor.html">IActivityMonitor</a>.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorTextHelperClient.html">ActivityMonitorTextHelperClient</a></h4>
+      <section><p>Base class for <a class="xref" href="CK.Core.IActivityMonitorClient.html">IActivityMonitorClient</a> that tracks groups and level changes in order
+to ease text-based renderer.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorTextWriterClient.html">ActivityMonitorTextWriterClient</a></h4>
+      <section><p>Formats the activity and pushes piece of texts to an <a class="xref" href="https://msdn.microsoft.com/en-us/library/018hxwa8(v=vs.110).aspx">Action&lt;T&gt;</a> where T is a string.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.LogFilterMatcherExtension.html">LogFilterMatcherExtension</a></h4>
+      <section><p>Supports <a class="xref" href="CK.Core.LogFilter.html">LogFilter</a> and <a class="xref" href="CK.Core.LogLevelFilter.html">LogLevelFilter</a> extension methods.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.SystemActivityMonitor.html">SystemActivityMonitor</a></h4>
+      <section><p>This <a class="xref" href="CK.Core.ActivityMonitor.html">ActivityMonitor</a> logs errors in a directory (if the static <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_RootLogPath">RootLogPath</a> property 
+is not null) and raises <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_OnError">OnError</a> events.
+Its main goal is to be internally used by the Monitor framework but can be used as a &quot;normal&quot; monitor (if you believe it is a good idea).
+If <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_RootLogPath">RootLogPath</a> is not set, Critical errors will NOT be logged.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.SystemActivityMonitor.LowLevelErrorEventArgs.html">SystemActivityMonitor.LowLevelErrorEventArgs</a></h4>
+      <section><p>Defines the event argument of <a class="xref" href="CK.Core.SystemActivityMonitor.html#CK_Core_SystemActivityMonitor_OnError">OnError</a>.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="CK.Core.ActivityLogGroupConclusion.html">ActivityLogGroupConclusion</a></h4>
+      <section><p>Describes the conclusion of a group. Conclusions are simply <a class="xref" href="CK.Core.ActivityLogGroupConclusion.html#CK_Core_ActivityLogGroupConclusion_Text">Text</a> <a class="xref" href="CK.Core.ActivityLogGroupConclusion.html#CK_Core_ActivityLogGroupConclusion_Tag">Tag</a>ged with a <span class="xref">CK.Core.CKTrait</span>.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.ActivityMonitorExtension.DependentSender.html">ActivityMonitorExtension.DependentSender</a></h4>
+      <section><p>Offers dependent token creation and launching.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.LogFilter.html">LogFilter</a></h4>
+      <section><p>Immutable capture of a double <a class="xref" href="CK.Core.LogLevelFilter.html">LogLevelFilter</a>. One for <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Line">Line</a> and one for <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Group">Group</a>.
+This value type exposes predefined configured couples: <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Debug">Debug</a>, <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Trace">Trace</a> (full trace), <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Verbose">Verbose</a>, <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Monitor">Monitor</a>, 
+<a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Terse">Terse</a>, <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Release">Release</a> and <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Off">Off</a> (no log at all).</p>
+</section>
+      <h4><a class="xref" href="CK.Core.SourceLogFilter.html">SourceLogFilter</a></h4>
+      <section><p>Immutable encapsulation of the two source filters: this enables overriding or filtering per source file.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="CK.Core.IActivityLogGroup.html">IActivityLogGroup</a></h4>
+      <section><p>Exposes all the relevant information for a currently opened group.
+Groups are linked together from the current one to the very first one 
+thanks to the <a class="xref" href="CK.Core.IActivityLogGroup.html#CK_Core_IActivityLogGroup_Parent">Parent</a> property.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.IActivityMonitor.html">IActivityMonitor</a></h4>
+      <section><p>Defines the core Activity Monitor interface. Small is beautiful. </p>
+</section>
+      <h4><a class="xref" href="CK.Core.IActivityMonitorBoundClient.html">IActivityMonitorBoundClient</a></h4>
+      <section><p>Specialized <a class="xref" href="CK.Core.IActivityMonitorClient.html">IActivityMonitorClient</a> that is bound to one <a class="xref" href="CK.Core.IActivityMonitor.html">IActivityMonitor</a>.
+Clients that can not be registered into multiple outputs (and receive logs from multiple monitors at the same time) should implement this 
+interface in order to control their registration/un-registration.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.IActivityMonitorClient.html">IActivityMonitorClient</a></h4>
+      <section><p>Listener for <a class="xref" href="CK.Core.IActivityMonitor.html">IActivityMonitor</a> registered in a <a class="xref" href="CK.Core.IActivityMonitorOutput.html">IActivityMonitorOutput</a>.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.IActivityMonitorGroupSender.html">IActivityMonitorGroupSender</a></h4>
+      <section><p>The interface that carries Send extension methods for groups.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.IActivityMonitorLineSender.html">IActivityMonitorLineSender</a></h4>
+      <section><p>The interface that carries Send extension methods.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.IActivityMonitorOutput.html">IActivityMonitorOutput</a></h4>
+      <section><p>Offers <a class="xref" href="CK.Core.IActivityMonitorClient.html">IActivityMonitorClient</a> registration/unregistration and exposes a <a class="xref" href="CK.Core.IActivityMonitorOutput.html#CK_Core_IActivityMonitorOutput_BridgeTarget">BridgeTarget</a> 
+(an <a class="xref" href="CK.Core.ActivityMonitorBridgeTarget.html">ActivityMonitorBridgeTarget</a>) that can be used to accept logs from other monitors.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.IDisposableGroup.html">IDisposableGroup</a></h4>
+      <section><p>Interface obtained once a Group has been opened.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.IUniqueId.html">IUniqueId</a></h4>
+      <section><p>Minimal interface that enables any type (specially reference type) to
+expose a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.guid(v=vs.110).aspx">Guid</a>.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="CK.Core.LogLevel.html">LogLevel</a></h4>
+      <section><p>Five standard log levels in increasing order used by <a class="xref" href="CK.Core.IActivityMonitor.html">IActivityMonitor</a>.</p>
+</section>
+      <h4><a class="xref" href="CK.Core.LogLevelFilter.html">LogLevelFilter</a></h4>
+      <section><p>Defines filters for <a class="xref" href="CK.Core.LogLevel.html">LogLevel</a>.</p>
+</section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="CK.Core.ActivityMonitor.SourceFilter.FilterSourceDelegate.html">ActivityMonitor.SourceFilter.FilterSourceDelegate</a></h4>
+      <section><p>Delegate type that can be assigned to <a class="xref" href="CK.Core.ActivityMonitor.SourceFilter.html#CK_Core_ActivityMonitor_SourceFilter_FilterSource">FilterSource</a> static property to 
+enable filter override based on the caller source location. </p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2017 Invenietis<br>Generated by <strong><a href="https://dotnet.github.io/docfx/" target="_blank">DocFX</a></strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

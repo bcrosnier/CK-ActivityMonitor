@@ -1,0 +1,677 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ActivityMonitorBridge
+   | CK-Text </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ActivityMonitorBridge
+   | CK-Text ">
+    <meta name="generator" content="docfx 2.20.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="CK-Text">
+                <span class="app-name">CK-Text</span>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CK.Core.ActivityMonitorBridge">
+  
+  
+  <h1 id="CK_Core_ActivityMonitorBridge" data-uid="CK.Core.ActivityMonitorBridge" class="text-break">Class ActivityMonitorBridge
+  </h1>
+  <div class="markdown level0 summary"><p>A <a class="xref" href="CK.Core.IActivityMonitorClient.html">IActivityMonitorClient</a> that relays what happens in a monitor to another monitor.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><span class="xref">ActivityMonitorBridge</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CK.Core.html">CK.Core</a></h6>
+  <h6><strong>Assembly</strong>: CK.ActivityMonitor.dll</h6>
+  <h5 id="CK_Core_ActivityMonitorBridge_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ActivityMonitorBridge : IActivityMonitorBoundClient, IActivityMonitorClient, IActivityMonitorBridgeCallback</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorBridge__ctor_CK_Core_ActivityMonitorBridgeTarget_System_Boolean_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorBridge.%23ctor(CK.Core.ActivityMonitorBridgeTarget%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitorBridge.cs/#L46">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorBridge__ctor_" data-uid="CK.Core.ActivityMonitorBridge.#ctor*"></a>
+  <h4 id="CK_Core_ActivityMonitorBridge__ctor_CK_Core_ActivityMonitorBridgeTarget_System_Boolean_System_Boolean_System_Boolean_" data-uid="CK.Core.ActivityMonitorBridge.#ctor(CK.Core.ActivityMonitorBridgeTarget,System.Boolean,System.Boolean,System.Boolean)">ActivityMonitorBridge(ActivityMonitorBridgeTarget, Boolean, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initialize a new <a class="xref" href="CK.Core.ActivityMonitorBridge.html">ActivityMonitorBridge</a> bound to an existing <a class="xref" href="CK.Core.ActivityMonitorBridgeTarget.html">ActivityMonitorBridgeTarget</a>
+This Client should be registered in the <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_Output">Output</a> of a local monitor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActivityMonitorBridge(ActivityMonitorBridgeTarget bridge, bool pullTargetTopicAndAutoTagsFromTarget, bool pushTopicAndAutoTagsToTarget, bool applyTargetFilterToUnfilteredLogs = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.ActivityMonitorBridgeTarget.html">ActivityMonitorBridgeTarget</a></td>
+        <td><span class="parametername">bridge</span></td>
+        <td><p>The target bridge.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">pullTargetTopicAndAutoTagsFromTarget</span></td>
+        <td><p>When true, the <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_Topic">Topic</a> and <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_AutoTags">AutoTags</a> are automaticaly updated whenever they change on the target monitor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">pushTopicAndAutoTagsToTarget</span></td>
+        <td><p>When true, any change to <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_Topic">Topic</a> or <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_AutoTags">AutoTags</a> are applied to the target monitor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">applyTargetFilterToUnfilteredLogs</span></td>
+        <td><p>True to avoid sending logs with level below the target <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_MinimalFilter">MinimalFilter</a> (when <a class="xref" href="CK.Core.ActivityMonitorBridgeTarget.html#CK_Core_ActivityMonitorBridgeTarget_HonorMonitorFilter">HonorMonitorFilter</a> is true
+and it is an unfiltered line or group log).
+This is an optimization that can be used to send less data to the target monitor but breaks the UnfilteredLog/UnfilteredOpenGroup contract.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorBridge_TagBridgePrematureClose.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorBridge.TagBridgePrematureClose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitorBridge.cs/#L28">View Source</a>
+  </span>
+  <h4 id="CK_Core_ActivityMonitorBridge_TagBridgePrematureClose" data-uid="CK.Core.ActivityMonitorBridge.TagBridgePrematureClose">TagBridgePrematureClose</h4>
+  <div class="markdown level1 summary"><p>Tags group conclusions emitted because of premature (unbalanced) removing of a bridge from a source monitor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly CKTrait TagBridgePrematureClose</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CK.Core.CKTrait</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorBridge_BridgeTarget.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorBridge.BridgeTarget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitorBridge.cs/#L65">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorBridge_BridgeTarget_" data-uid="CK.Core.ActivityMonitorBridge.BridgeTarget*"></a>
+  <h4 id="CK_Core_ActivityMonitorBridge_BridgeTarget" data-uid="CK.Core.ActivityMonitorBridge.BridgeTarget">BridgeTarget</h4>
+  <div class="markdown level1 summary"><p>Gets the target bridge of the <a class="xref" href="CK.Core.ActivityMonitorBridge.html#CK_Core_ActivityMonitorBridge_TargetMonitor">TargetMonitor</a>. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActivityMonitorBridgeTarget BridgeTarget { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.ActivityMonitorBridgeTarget.html">ActivityMonitorBridgeTarget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorBridge_PullTopicAndAutoTagsFromTarget.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorBridge.PullTopicAndAutoTagsFromTarget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitorBridge.cs/#L71">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorBridge_PullTopicAndAutoTagsFromTarget_" data-uid="CK.Core.ActivityMonitorBridge.PullTopicAndAutoTagsFromTarget*"></a>
+  <h4 id="CK_Core_ActivityMonitorBridge_PullTopicAndAutoTagsFromTarget" data-uid="CK.Core.ActivityMonitorBridge.PullTopicAndAutoTagsFromTarget">PullTopicAndAutoTagsFromTarget</h4>
+  <div class="markdown level1 summary"><p>Gets whether this bridge updates the Topic and AutoTags of its monitor whenever 
+they change on the target monitor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PullTopicAndAutoTagsFromTarget { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorBridge_TargetMonitor.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorBridge.TargetMonitor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitorBridge.cs/#L60">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorBridge_TargetMonitor_" data-uid="CK.Core.ActivityMonitorBridge.TargetMonitor*"></a>
+  <h4 id="CK_Core_ActivityMonitorBridge_TargetMonitor" data-uid="CK.Core.ActivityMonitorBridge.TargetMonitor">TargetMonitor</h4>
+  <div class="markdown level1 summary"><p>Gets the target monitor. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IActivityMonitor TargetMonitor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.IActivityMonitor.html">IActivityMonitor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorBoundClient_IsDead.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorBridge.CK%23Core%23IActivityMonitorBoundClient%23IsDead%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitorBridge.cs/#L125">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorBoundClient_IsDead_" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorBoundClient#IsDead*"></a>
+  <h4 id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorBoundClient_IsDead" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorBoundClient#IsDead">IActivityMonitorBoundClient.IsDead</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IActivityMonitorBoundClient.IsDead { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitorBoundClient.html#CK_Core_IActivityMonitorBoundClient_IsDead">IActivityMonitorBoundClient.IsDead</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorBoundClient_MinimalFilter.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorBridge.CK%23Core%23IActivityMonitorBoundClient%23MinimalFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitorBridge.cs/#L127">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorBoundClient_MinimalFilter_" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorBoundClient#MinimalFilter*"></a>
+  <h4 id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorBoundClient_MinimalFilter" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorBoundClient#MinimalFilter">IActivityMonitorBoundClient.MinimalFilter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">LogFilter IActivityMonitorBoundClient.MinimalFilter { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.LogFilter.html">LogFilter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitorBoundClient.html#CK_Core_IActivityMonitorBoundClient_MinimalFilter">IActivityMonitorBoundClient.MinimalFilter</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorBoundClient_SetMonitor_CK_Core_Impl_IActivityMonitorImpl_System_Boolean_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorBridge.CK%23Core%23IActivityMonitorBoundClient%23SetMonitor(CK.Core.Impl.IActivityMonitorImpl%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitorBridge.cs/#L95">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorBoundClient_SetMonitor_" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorBoundClient#SetMonitor*"></a>
+  <h4 id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorBoundClient_SetMonitor_CK_Core_Impl_IActivityMonitorImpl_System_Boolean_" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorBoundClient#SetMonitor(CK.Core.Impl.IActivityMonitorImpl,System.Boolean)">IActivityMonitorBoundClient.SetMonitor(IActivityMonitorImpl, Boolean)</h4>
+  <div class="markdown level1 summary"><p>forceBuggyRemove is not used here since this client is not lockable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IActivityMonitorBoundClient.SetMonitor(IActivityMonitorImpl source, bool forceBuggyRemove)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.Impl.IActivityMonitorImpl.html">IActivityMonitorImpl</a></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
+        <td><span class="parametername">forceBuggyRemove</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitorBoundClient.html#CK_Core_IActivityMonitorBoundClient_SetMonitor_CK_Core_Impl_IActivityMonitorImpl_System_Boolean_">IActivityMonitorBoundClient.SetMonitor(IActivityMonitorImpl, Boolean)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnAutoTagsChanged_CK_Core_CKTrait_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorBridge.CK%23Core%23IActivityMonitorClient%23OnAutoTagsChanged(CK.Core.CKTrait)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitorBridge.cs/#L205">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnAutoTagsChanged_" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorClient#OnAutoTagsChanged*"></a>
+  <h4 id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnAutoTagsChanged_CK_Core_CKTrait_" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorClient#OnAutoTagsChanged(CK.Core.CKTrait)">IActivityMonitorClient.OnAutoTagsChanged(CKTrait)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IActivityMonitorClient.OnAutoTagsChanged(CKTrait newTags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CK.Core.CKTrait</span></td>
+        <td><span class="parametername">newTags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitorClient.html#CK_Core_IActivityMonitorClient_OnAutoTagsChanged_CK_Core_CKTrait_">IActivityMonitorClient.OnAutoTagsChanged(CKTrait)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnGroupClosed_CK_Core_IActivityLogGroup_System_Collections_Generic_IReadOnlyList_CK_Core_ActivityLogGroupConclusion__.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorBridge.CK%23Core%23IActivityMonitorClient%23OnGroupClosed(CK.Core.IActivityLogGroup%2CSystem.Collections.Generic.IReadOnlyList%7BCK.Core.ActivityLogGroupConclusion%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitorBridge.cs/#L191">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnGroupClosed_" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorClient#OnGroupClosed*"></a>
+  <h4 id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnGroupClosed_CK_Core_IActivityLogGroup_System_Collections_Generic_IReadOnlyList_CK_Core_ActivityLogGroupConclusion__" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorClient#OnGroupClosed(CK.Core.IActivityLogGroup,System.Collections.Generic.IReadOnlyList{CK.Core.ActivityLogGroupConclusion})">IActivityMonitorClient.OnGroupClosed(IActivityLogGroup, IReadOnlyList&lt;ActivityLogGroupConclusion&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IActivityMonitorClient.OnGroupClosed(IActivityLogGroup group, IReadOnlyList&lt;ActivityLogGroupConclusion&gt; conclusions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.IActivityLogGroup.html">IActivityLogGroup</a></td>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/hh192385(v=vs.110).aspx">IReadOnlyList</a>&lt;<a class="xref" href="CK.Core.ActivityLogGroupConclusion.html">ActivityLogGroupConclusion</a>&gt;</td>
+        <td><span class="parametername">conclusions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitorClient.html#CK_Core_IActivityMonitorClient_OnGroupClosed_CK_Core_IActivityLogGroup_System_Collections_Generic_IReadOnlyList_CK_Core_ActivityLogGroupConclusion__">IActivityMonitorClient.OnGroupClosed(IActivityLogGroup, IReadOnlyList&lt;ActivityLogGroupConclusion&gt;)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnGroupClosing_CK_Core_IActivityLogGroup_System_Collections_Generic_List_CK_Core_ActivityLogGroupConclusion___.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorBridge.CK%23Core%23IActivityMonitorClient%23OnGroupClosing(CK.Core.IActivityLogGroup%2CSystem.Collections.Generic.List%7BCK.Core.ActivityLogGroupConclusion%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitorBridge.cs/#L184">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnGroupClosing_" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorClient#OnGroupClosing*"></a>
+  <h4 id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnGroupClosing_CK_Core_IActivityLogGroup_System_Collections_Generic_List_CK_Core_ActivityLogGroupConclusion___" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorClient#OnGroupClosing(CK.Core.IActivityLogGroup,System.Collections.Generic.List{CK.Core.ActivityLogGroupConclusion}@)">IActivityMonitorClient.OnGroupClosing(IActivityLogGroup, ref List&lt;ActivityLogGroupConclusion&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IActivityMonitorClient.OnGroupClosing(IActivityLogGroup group, ref List&lt;ActivityLogGroupConclusion&gt; conclusions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.IActivityLogGroup.html">IActivityLogGroup</a></td>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/6sh2ey19(v=vs.110).aspx">List</a>&lt;<a class="xref" href="CK.Core.ActivityLogGroupConclusion.html">ActivityLogGroupConclusion</a>&gt;</td>
+        <td><span class="parametername">conclusions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitorClient.html#CK_Core_IActivityMonitorClient_OnGroupClosing_CK_Core_IActivityLogGroup_System_Collections_Generic_List_CK_Core_ActivityLogGroupConclusion___">IActivityMonitorClient.OnGroupClosing(IActivityLogGroup, ref List&lt;ActivityLogGroupConclusion&gt;)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnOpenGroup_CK_Core_IActivityLogGroup_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorBridge.CK%23Core%23IActivityMonitorClient%23OnOpenGroup(CK.Core.IActivityLogGroup)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitorBridge.cs/#L162">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnOpenGroup_" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorClient#OnOpenGroup*"></a>
+  <h4 id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnOpenGroup_CK_Core_IActivityLogGroup_" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorClient#OnOpenGroup(CK.Core.IActivityLogGroup)">IActivityMonitorClient.OnOpenGroup(IActivityLogGroup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IActivityMonitorClient.OnOpenGroup(IActivityLogGroup group)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.IActivityLogGroup.html">IActivityLogGroup</a></td>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitorClient.html#CK_Core_IActivityMonitorClient_OnOpenGroup_CK_Core_IActivityLogGroup_">IActivityMonitorClient.OnOpenGroup(IActivityLogGroup)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnTopicChanged_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorBridge.CK%23Core%23IActivityMonitorClient%23OnTopicChanged(System.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitorBridge.cs/#L200">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnTopicChanged_" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorClient#OnTopicChanged*"></a>
+  <h4 id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnTopicChanged_System_String_System_String_System_Int32_" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorClient#OnTopicChanged(System.String,System.String,System.Int32)">IActivityMonitorClient.OnTopicChanged(String, String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IActivityMonitorClient.OnTopicChanged(string newTopic, string fileName, int lineNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">newTopic</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">lineNumber</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitorClient.html#CK_Core_IActivityMonitorClient_OnTopicChanged_System_String_System_String_System_Int32_">IActivityMonitorClient.OnTopicChanged(String, String, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnUnfilteredLog_CK_Core_ActivityMonitorLogData_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorBridge.CK%23Core%23IActivityMonitorClient%23OnUnfilteredLog(CK.Core.ActivityMonitorLogData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitorBridge.cs/#L150">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnUnfilteredLog_" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorClient#OnUnfilteredLog*"></a>
+  <h4 id="CK_Core_ActivityMonitorBridge_CK_Core_IActivityMonitorClient_OnUnfilteredLog_CK_Core_ActivityMonitorLogData_" data-uid="CK.Core.ActivityMonitorBridge.CK#Core#IActivityMonitorClient#OnUnfilteredLog(CK.Core.ActivityMonitorLogData)">IActivityMonitorClient.OnUnfilteredLog(ActivityMonitorLogData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IActivityMonitorClient.OnUnfilteredLog(ActivityMonitorLogData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.ActivityMonitorLogData.html">ActivityMonitorLogData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CK.Core.IActivityMonitorClient.html#CK_Core_IActivityMonitorClient_OnUnfilteredLog_CK_Core_ActivityMonitorLogData_">IActivityMonitorClient.OnUnfilteredLog(ActivityMonitorLogData)</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitorBridge.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitorBridge%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitorBridge.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2017 Invenietis<br>Generated by <strong><a href="https://dotnet.github.io/docfx/" target="_blank">DocFX</a></strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

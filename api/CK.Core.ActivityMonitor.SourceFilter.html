@@ -1,0 +1,465 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ActivityMonitor.SourceFilter
+   | CK-Text </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ActivityMonitor.SourceFilter
+   | CK-Text ">
+    <meta name="generator" content="docfx 2.20.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="CK-Text">
+                <span class="app-name">CK-Text</span>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CK.Core.ActivityMonitor.SourceFilter">
+  
+  
+  <h1 id="CK_Core_ActivityMonitor_SourceFilter" data-uid="CK.Core.ActivityMonitor.SourceFilter" class="text-break">Class ActivityMonitor.SourceFilter
+  </h1>
+  <div class="markdown level0 summary"><p>Manages source filtering.
+This default implementation (<a class="xref" href="CK.Core.ActivityMonitor.SourceFilter.html#CK_Core_ActivityMonitor_SourceFilter_DefaultFilter_System_String__System_Int32__">DefaultFilter(ref String, ref Int32)</a>) handles file scope only.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+    <div class="level1"><span class="xref">ActivityMonitor.SourceFilter</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CK.Core.html">CK.Core</a></h6>
+  <h6><strong>Assembly</strong>: CK.ActivityMonitor.dll</h6>
+  <h5 id="CK_Core_ActivityMonitor_SourceFilter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class SourceFilter</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_SourceFilter_FilterSource.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SourceFilter.FilterSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.SourceFiltering.cs/#L66">View Source</a>
+  </span>
+  <h4 id="CK_Core_ActivityMonitor_SourceFilter_FilterSource" data-uid="CK.Core.ActivityMonitor.SourceFilter.FilterSource">FilterSource</h4>
+  <div class="markdown level1 summary"><p>Holds a <a class="xref" href="CK.Core.ActivityMonitor.SourceFilter.FilterSourceDelegate.html">ActivityMonitor.SourceFilter.FilterSourceDelegate</a> that can override filter configuration and/or alter 
+source file name.
+It can be changed at any time and application is immediate. 
+It is set by default to <a class="xref" href="CK.Core.ActivityMonitor.SourceFilter.html#CK_Core_ActivityMonitor_SourceFilter_DefaultFilter_System_String__System_Int32__">DefaultFilter(ref String, ref Int32)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ActivityMonitor.SourceFilter.FilterSourceDelegate FilterSource</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.ActivityMonitor.SourceFilter.FilterSourceDelegate.html">ActivityMonitor.SourceFilter.FilterSourceDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_SourceFilter_ClearAll.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SourceFilter.ClearAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.SourceFiltering.cs/#L71">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_SourceFilter_ClearAll_" data-uid="CK.Core.ActivityMonitor.SourceFilter.ClearAll*"></a>
+  <h4 id="CK_Core_ActivityMonitor_SourceFilter_ClearAll" data-uid="CK.Core.ActivityMonitor.SourceFilter.ClearAll">ClearAll()</h4>
+  <div class="markdown level1 summary"><p>Clears all existing filters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearAll()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_SourceFilter_ClearMinimals.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SourceFilter.ClearMinimals%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.SourceFiltering.cs/#L87">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_SourceFilter_ClearMinimals_" data-uid="CK.Core.ActivityMonitor.SourceFilter.ClearMinimals*"></a>
+  <h4 id="CK_Core_ActivityMonitor_SourceFilter_ClearMinimals" data-uid="CK.Core.ActivityMonitor.SourceFilter.ClearMinimals">ClearMinimals()</h4>
+  <div class="markdown level1 summary"><p>Clears all existing Minimal filters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearMinimals()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_SourceFilter_ClearOverrides.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SourceFilter.ClearOverrides%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.SourceFiltering.cs/#L79">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_SourceFilter_ClearOverrides_" data-uid="CK.Core.ActivityMonitor.SourceFilter.ClearOverrides*"></a>
+  <h4 id="CK_Core_ActivityMonitor_SourceFilter_ClearOverrides" data-uid="CK.Core.ActivityMonitor.SourceFilter.ClearOverrides">ClearOverrides()</h4>
+  <div class="markdown level1 summary"><p>Clears all existing Override filters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearOverrides()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_SourceFilter_DefaultFilter_System_String__System_Int32__.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SourceFilter.DefaultFilter(System.String%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.SourceFiltering.cs/#L121">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_SourceFilter_DefaultFilter_" data-uid="CK.Core.ActivityMonitor.SourceFilter.DefaultFilter*"></a>
+  <h4 id="CK_Core_ActivityMonitor_SourceFilter_DefaultFilter_System_String__System_Int32__" data-uid="CK.Core.ActivityMonitor.SourceFilter.DefaultFilter(System.String@,System.Int32@)">DefaultFilter(ref String, ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Default filter, challenging file names added by <a class="xref" href="CK.Core.ActivityMonitor.SourceFilter.html#CK_Core_ActivityMonitor_SourceFilter_SetFilter_CK_Core_SourceLogFilter_System_String_">SetFilter(SourceLogFilter, String)</a> method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SourceLogFilter DefaultFilter(ref string fileName, ref int lineNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110).aspx">Int32</a></td>
+        <td><span class="parametername">lineNumber</span></td>
+        <td><p>The line number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.SourceLogFilter.html">SourceLogFilter</a></td>
+        <td><p>Defaults to <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Undefined">Undefined</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_SourceFilter_SetFilter_CK_Core_SourceLogFilter_System_String_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SourceFilter.SetFilter(CK.Core.SourceLogFilter%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.SourceFiltering.cs/#L134">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_SourceFilter_SetFilter_" data-uid="CK.Core.ActivityMonitor.SourceFilter.SetFilter*"></a>
+  <h4 id="CK_Core_ActivityMonitor_SourceFilter_SetFilter_CK_Core_SourceLogFilter_System_String_" data-uid="CK.Core.ActivityMonitor.SourceFilter.SetFilter(CK.Core.SourceLogFilter,System.String)">SetFilter(SourceLogFilter, String)</h4>
+  <div class="markdown level1 summary"><p>Sets a <a class="xref" href="CK.Core.SourceLogFilter.html">SourceLogFilter</a> for a given file. 
+Use <a class="xref" href="CK.Core.SourceLogFilter.html#CK_Core_SourceLogFilter_Undefined">Undefined</a> to clear any existing configuration for the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetFilter(SourceLogFilter filter, string fileName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.SourceLogFilter.html">SourceLogFilter</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td><p>The filter to set for the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name: do not specify it to inject the path of your source file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_SourceFilter_SetMinimalFilter_CK_Core_LogFilter_System_String_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SourceFilter.SetMinimalFilter(CK.Core.LogFilter%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.SourceFiltering.cs/#L158">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_SourceFilter_SetMinimalFilter_" data-uid="CK.Core.ActivityMonitor.SourceFilter.SetMinimalFilter*"></a>
+  <h4 id="CK_Core_ActivityMonitor_SourceFilter_SetMinimalFilter_CK_Core_LogFilter_System_String_" data-uid="CK.Core.ActivityMonitor.SourceFilter.SetMinimalFilter(CK.Core.LogFilter,System.String)">SetMinimalFilter(LogFilter, String)</h4>
+  <div class="markdown level1 summary"><p>Sets a minimal <a class="xref" href="CK.Core.LogFilter.html">LogFilter</a> for a given file.
+Use <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Undefined">Undefined</a> to clear it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetMinimalFilter(LogFilter minimalFilter, string fileName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.LogFilter.html">LogFilter</a></td>
+        <td><span class="parametername">minimalFilter</span></td>
+        <td><p>The minimal filter to set for the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name: do not specify it to inject the path of your source file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_SourceFilter_SetOverrideFilter_CK_Core_LogFilter_System_String_.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SourceFilter.SetOverrideFilter(CK.Core.LogFilter%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.SourceFiltering.cs/#L147">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_SourceFilter_SetOverrideFilter_" data-uid="CK.Core.ActivityMonitor.SourceFilter.SetOverrideFilter*"></a>
+  <h4 id="CK_Core_ActivityMonitor_SourceFilter_SetOverrideFilter_CK_Core_LogFilter_System_String_" data-uid="CK.Core.ActivityMonitor.SourceFilter.SetOverrideFilter(CK.Core.LogFilter,System.String)">SetOverrideFilter(LogFilter, String)</h4>
+  <div class="markdown level1 summary"><p>Sets an override <a class="xref" href="CK.Core.LogFilter.html">LogFilter</a> for a given file: when not <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Undefined">Undefined</a> this 
+takes precedence over <a class="xref" href="CK.Core.IActivityMonitor.html#CK_Core_IActivityMonitor_ActualFilter">ActualFilter</a>.
+Use <a class="xref" href="CK.Core.LogFilter.html#CK_Core_LogFilter_Undefined">Undefined</a> to clear it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetOverrideFilter(LogFilter overrideFilter, string fileName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CK.Core.LogFilter.html">LogFilter</a></td>
+        <td><span class="parametername">overrideFilter</span></td>
+        <td><p>The override filter to set for the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The file name: do not specify it to inject the path of your source file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_SourceFilter_Update_System_Func_System_String_CK_Core_SourceLogFilter_CK_Core_SourceLogFilter__.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SourceFilter.Update(System.Func%7BSystem.String%2CCK.Core.SourceLogFilter%2CCK.Core.SourceLogFilter%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.SourceFiltering.cs/#L101">View Source</a>
+  </span>
+  <a id="CK_Core_ActivityMonitor_SourceFilter_Update_" data-uid="CK.Core.ActivityMonitor.SourceFilter.Update*"></a>
+  <h4 id="CK_Core_ActivityMonitor_SourceFilter_Update_System_Func_System_String_CK_Core_SourceLogFilter_CK_Core_SourceLogFilter__" data-uid="CK.Core.ActivityMonitor.SourceFilter.Update(System.Func{System.String,CK.Core.SourceLogFilter,CK.Core.SourceLogFilter})">Update(Func&lt;String, SourceLogFilter, SourceLogFilter&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates (or simply scans) all existing filters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Update(Func&lt;string, SourceLogFilter, SourceLogFilter&gt; mapper)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/bb534647(v=vs.110).aspx">Func</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>, <a class="xref" href="CK.Core.SourceLogFilter.html">SourceLogFilter</a>, <a class="xref" href="CK.Core.SourceLogFilter.html">SourceLogFilter</a>&gt;</td>
+        <td><span class="parametername">mapper</span></td>
+        <td><p>Function that takes the file name, the existing filter and maps it to a new filter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CK_Core_ActivityMonitor_SourceFilter_Update_System_Func_System_String_CK_Core_SourceLogFilter_CK_Core_SourceLogFilter___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When the mapper returns <a class="xref" href="CK.Core.SourceLogFilter.html#CK_Core_SourceLogFilter_Undefined">Undefined</a>, the file configuration is removed.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/new/feature/docfx/apiSpec/new?filename=CK_Core_ActivityMonitor_SourceFilter.md&amp;value=---%0Auid%3A%20CK.Core.ActivityMonitor.SourceFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bcrosnier/CK-ActivityMonitor/blob/feature/docfx/CK.ActivityMonitor/Impl/ActivityMonitor.SourceFiltering.cs/#L41" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2017 Invenietis<br>Generated by <strong><a href="https://dotnet.github.io/docfx/" target="_blank">DocFX</a></strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
