@@ -1,0 +1,16 @@
+- name: Documentation
+  href: index.md
+- name: Getting started
+  href: getting-started.md
+  items:
+  - name: Log levels
+    href: getting-started.md#log-levels
+  - name: Exceptions
+    href: getting-started.md#logging-exceptions
+  - name: Tags
+    href: getting-started.md#adding-tags-to-log-lines
+  - name: Groups
+    href: getting-started.md#groups
+- name: Advanced features
+  href: advanced-features.md
+
